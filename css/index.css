@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+#headerContent{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerContent img{
+    width: 200px;
+    height: 65px;
+}
+
+#headerContent nav{
+    width: 550px;
+    height: 100px;
+    display: flex;
+}
+
+#headerContent nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#headerContent nav ul li{
+    font-weight: bold;
+    color: #333;
+}
+
+#headerContent button{
+    width: 45px;
+    height: 45px;
+    border: 3px solid #f1f9ff;
+    background-color: #f1f9ff;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#headerContent button img{
+    width: 100%;
+    height: 100%;
+}
+
+#wrap1headerSlide{
+    width: 100%;
+    height: 750px;
+    background-color: aquamarine;
+}
+
+#wrap2PerformanceInformation{
+    width: 100%;
+    height: 1145px;
+    background-color: violet;
+}
+
+#wrap3PerformancePost{
+    width: 100%;
+    height: 1195px;
+    background-color: thistle;
+}
+
+#wrap4PerformancePhoto{
+    width: 100%;
+    height: 1780px;
+    background-color: palegreen;
+}
+
+#wrap5BestPerformance{
+    width: 100%;
+    height: 845px;
+    background-color: darksalmon;
+}
+
+footer{
+    width: 100%;
+    height: 610px;
+    background-color: #f1f9ff;
+}
+
