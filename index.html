@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>안산문화예술의전당</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/common/facon.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div id="headerContent">
@@ -23,11 +31,98 @@
             <button type="submit"><img src="img/common/search-icon.png" alt="searchIcon"></button>
         </div>
     </header>
-    <div id="wrap1headerSlide"></div>
+    <div id="wrap1headerSlide" class="swiper">
+        <div class="swiper-wrapper">
+            <div id="slideHeader1" class="swiper-slide">
+                <div class="slideImg">
+                    <a href="#"><img src="img/index/mystery.jpg" alt="mystery"></a>
+                </div>
+                <div class="slideText">
+                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="boxSlideText">
+                        <span class="fa fa-calendar">
+                            &nbsp;2022년 7월1일
+                        </span>
+                        <span class="fa fa-comments">
+                            15
+                        </span>
+                        <a href="#">자세히보기</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slideHeader2" class="swiper-slide">
+                <div class="slideImg">
+                    <a href="#"><img src="img/index/days.jpg" alt="day"></a>
+                </div>
+                <div class="slideText">
+                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="boxSlideText">
+                        <span class="fa fa-calendar">
+                            &nbsp;2022년 7월1일
+                        </span>
+                        <span class="fa fa-comments">
+                            15
+                        </span>
+                        <a href="#">자세히보기</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slideHeader3" class="swiper-slide">
+                <div class="slideImg">
+                    <a href="#"><img src="img/index/conceert.jpg" alt="concert"></a>
+                </div>
+                <div class="slideText">
+                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="boxSlideText">
+                        <span class="fa fa-calendar">
+                            &nbsp;2022년 7월1일
+                        </span>
+                        <span class="fa fa-comments">
+                            15
+                        </span>
+                        <a href="#">자세히보기</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slideHeader4" class="swiper-slide">
+                <div class="slideImg">
+                    <a href="#"><img src="img/index/swing.jpg " alt="swing"></a>
+                </div>
+                <div class="slideText4">
+                    <div class="s4TextBox">
+                        <h1>현대무용<br>스윙</h1>
+                    </div>
+                    <div class="boxSlideText">
+                        <span class="fa fa-calendar">
+                            &nbsp;2022년 7월8일
+                        </span>
+                        <span class="fa fa-comments">
+                            07
+                        </span>
+                        <a href="#">자세히보기</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- 헤더 슬라이드 swiper slide -->
+        <script src="js/swiperHeaderSlide.js"></script>
+    </div>
+
     <div id="wrap2PerformanceInformation"></div>
     <div id="wrap3PerformancePost"></div>
     <div id="wrap4PerformancePhoto"></div>
     <div id="wrap5BestPerformance"></div>
     <footer></footer>
 </body>
+
 </html>

@@ -25,7 +25,6 @@ table {
 header{
     width: 100%;
     height: 100px;
-    background-color: white;
 }
 
 #headerContent{
@@ -39,12 +38,12 @@ header{
 }
 
 #headerContent img{
-    width: 200px;
-    height: 65px;
+    width: 236px;
+    height: 61px;
 }
 
 #headerContent nav{
-    width: 550px;
+    width: 450px;
     height: 100px;
     display: flex;
 }
@@ -57,7 +56,7 @@ header{
     justify-content: space-around;
 }
 
-#headerContent nav ul li{
+#headerContent nav ul li a{
     font-weight: bold;
     color: #333;
 }
@@ -65,7 +64,7 @@ header{
 #headerContent button{
     width: 45px;
     height: 45px;
-    border: 3px solid #f1f9ff;
+    border: 2px solid #e0eef8;
     background-color: #f1f9ff;
     border-radius: 10%;
     cursor: pointer;
@@ -78,8 +77,111 @@ header{
 
 #wrap1headerSlide{
     width: 100%;
-    height: 750px;
-    background-color: aquamarine;
+    height: 715px;
+    position: relative;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#slideHeader1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slideHeader1 a{
+    width: 100%;
+    height: 100%;
+}
+
+.slideImg a img{
+    width: 57%;
+    height: 100%;
+}
+
+.slideText {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 23%;
+    left: 980px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideText img{
+    width: 400px;
+    height: 300px;
+}
+
+.boxSlideText{
+    width: 430px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 110px;
+    height: 200px;
+}
+
+.fa-calendar{
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+.fa-comments{
+    color: #999;
+    font-size: 12px;
+}
+
+.boxSlideText a{
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+#slideHeader2 a img, #slideHeader3 a img{
+    width: 62%;
+}
+
+#slideHeaer2 .slideText {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    top: 23%;
+    left: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideText4 {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 20%;
+    left: 980px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s4TextBox h1{
+    font-size: 90px;
+    font-weight: bold;
+    text-align: left;
+    background-image: url(../img/index/swing.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-background-clip: text;
+}
+
+.slideText4 img{
+    width: 460px;
+    height: 115px;
 }
 
 #wrap2PerformanceInformation{
