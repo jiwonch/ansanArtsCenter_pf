@@ -1,5 +1,49 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ELAND_Nice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRA_SONGEULSSI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_SONGEULSSI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +69,8 @@ table {
 header{
     width: 100%;
     height: 100px;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 #headerContent{
@@ -35,6 +81,12 @@ header{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+}
+
+header.on {
+    background-color: white;
+    z-index: 20;
+    box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
 }
 
 #headerContent img{
@@ -64,9 +116,9 @@ header{
 #headerContent button{
     width: 45px;
     height: 45px;
-    border: 2px solid #e0eef8;
-    background-color: #f1f9ff;
-    border-radius: 10%;
+    border: 2px solid #f18b1e;
+    background-color: transparent;
+    border-radius: 30%;
     cursor: pointer;
 }
 
@@ -97,36 +149,36 @@ header{
     height: 100%;
 }
 
-.slideImg a img{
+.slideImg{
     width: 57%;
+    height: 100%;
+    float: left;
+}
+
+.slideImg a img{
+    width: 100%;
     height: 100%;
 }
 
 .slideText {
     position: absolute;
     height: 100%;
-    width: 45%;
+    width: 43%;
     top: 23%;
-    left: 980px;
+    right: 0%;
     display: flex;
     flex-direction: column;
 }
 
-.slideText img{
-    width: 400px;
-    height: 300px;
-}
-
 .boxSlideText{
-    width: 430px;
+    width: 420px;
     float: left;
     margin-top: 50px;
-    margin-left: 110px;
     height: 200px;
 }
 
 .fa-calendar{
-    padding: 20px;
+    padding: 15px;
     color: #999;
     font-size: 12px;
 }
@@ -143,32 +195,50 @@ header{
     margin-left: 40%;
 }
 
-#slideHeader2 a img, #slideHeader3 a img{
-    width: 62%;
+.s1TextBox h1{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+    background-image: url(../img/index/blue.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-background-clip: text;
+    font-family: '국립박물관문화재단클래식B';
+    margin-left: -15%;
 }
 
-#slideHeaer2 .slideText {
-    position: absolute;
-    height: 100%;
-    width: 40%;
-    top: 23%;
-    left: 1000px;
-    display: flex;
-    flex-direction: column;
+.s2TextBox h1{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+    background-image: url(../img/index/green.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-background-clip: text;
+    font-family: '국립박물관문화재단클래식B';
+    margin-left: -15%;
 }
 
-.slideText4 {
-    position: absolute;
-    height: 100%;
-    width: 45%;
-    top: 20%;
-    left: 980px;
-    display: flex;
-    flex-direction: column;
+.s3TextBox h1{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+    background-image: url(../img/index/conceert_reverse.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-background-clip: text;
+    font-family: '국립박물관문화재단클래식B';
+    margin-left: -15%;
 }
 
 .s4TextBox h1{
-    font-size: 90px;
+    font-size: 100px;
     font-weight: bold;
     text-align: left;
     background-image: url(../img/index/swing.jpg);
@@ -177,17 +247,110 @@ header{
     background-attachment: fixed;
     -webkit-text-fill-color: rgba(255, 255, 255,0.1);
     -webkit-background-clip: text;
-}
-
-.slideText4 img{
-    width: 460px;
-    height: 115px;
+    font-family: '국립박물관문화재단클래식B';
+    margin-left: -15%;
 }
 
 #wrap2PerformanceInformation{
     width: 100%;
     height: 1145px;
-    background-color: violet;
+    padding: 150px 0 118px 0;
+}
+
+#informationTitle{
+    width: 1200px;
+    height: 165px;
+    margin: 0 auto;
+}
+
+#informationTitle h1{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333;
+    font-family: 'Signika', sans-serif;
+    padding-left: 15px;
+
+}
+
+#infomationPoster{
+    width: 100%;
+    height: 712px;
+    position: relative;
+    padding-right: 0;
+}
+
+#infomationPoster::after{
+    content: "";
+    position: absolute;
+    top: 120px;
+    right: 15%;
+    bottom: -50px;
+    left: 0;
+    background-color: #fdf5eb;
+    z-index: -1;
+}
+
+#posterVisible{
+    width: 81.6%;
+    height: 711px;
+    float: right;
+    overflow: hidden;
+}
+
+#posterHidden{
+    position: relative;
+    width: 100%;
+    height: 711px;
+}
+
+.hiddenSwiper{
+    width: 100%;
+}
+
+.poster{
+    width: 420px !important;
+    height: 680px;
+    margin: 0 15px;
+}
+
+.poster_1{
+    background-image: url("../img/index/information_1.jpg");
+}
+
+.poster_2{
+    background-image: url("../img/index/information_2.jpg");
+}
+
+.poster_3{
+    background-image: url("../img/index/information_3.jpg");
+}
+
+.poster_4{
+    background-image: url("../img/index/information_4.jpg");
+}
+
+.poster_5{
+    background-image: url("../img/index/information_5.jpg");
+}
+
+.poster_6{
+    background-image: url("../img/index/information_6.jpg");
+}
+
+.poster_7{
+    background-image: url("../img/index/information_7.jpg");
+}
+
+.poster_8{
+    background-image: url("../img/index/information_8.jpg");
+}
+
+.poster_9{
+    background-image: url("../img/index/information_9.jpg");
+}
+
+.poster_10{
+    background-image: url("../img/index/information_10.jpg");
 }
 
 #wrap3PerformancePost{

@@ -31,6 +31,10 @@
             <button type="submit"><img src="img/common/search-icon.png" alt="searchIcon"></button>
         </div>
     </header>
+
+    <!-- 헤더 스크롤시 fixed -->
+    <script src="js/headerFix.js"></script>
+
     <div id="wrap1headerSlide" class="swiper">
         <div class="swiper-wrapper">
             <div id="slideHeader1" class="swiper-slide">
@@ -38,7 +42,9 @@
                     <a href="#"><img src="img/index/mystery.jpg" alt="mystery"></a>
                 </div>
                 <div class="slideText">
-                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="s1TextBox">
+                        <h1>루루섬의<br>비밀</h1>
+                    </div>
                     <div class="boxSlideText">
                         <span class="fa fa-calendar">
                             &nbsp;2022년 7월1일
@@ -57,7 +63,9 @@
                     <a href="#"><img src="img/index/days.jpg" alt="day"></a>
                 </div>
                 <div class="slideText">
-                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="s2TextBox">
+                        <h1>나쁘지<br>않은 날</h1>
+                    </div>
                     <div class="boxSlideText">
                         <span class="fa fa-calendar">
                             &nbsp;2022년 7월1일
@@ -76,7 +84,9 @@
                     <a href="#"><img src="img/index/conceert.jpg" alt="concert"></a>
                 </div>
                 <div class="slideText">
-                    <img src="img/index/textMystery.png" alt="textMystery">
+                    <div class="s3TextBox">
+                        <h1>수려한<br>수요일<br>콘서트</h1>
+                    </div>
                     <div class="boxSlideText">
                         <span class="fa fa-calendar">
                             &nbsp;2022년 7월1일
@@ -94,7 +104,7 @@
                 <div class="slideImg">
                     <a href="#"><img src="img/index/swing.jpg " alt="swing"></a>
                 </div>
-                <div class="slideText4">
+                <div class="slideText">
                     <div class="s4TextBox">
                         <h1>현대무용<br>스윙</h1>
                     </div>
@@ -118,7 +128,36 @@
         <script src="js/swiperHeaderSlide.js"></script>
     </div>
 
-    <div id="wrap2PerformanceInformation"></div>
+    <div id="wrap2PerformanceInformation">
+        <div id="informationTitle">
+            <h1>ASAC <br>Performance Schedule</h1>
+        </div>
+        <div id="infomationPoster">
+            <div id="posterWrap">
+                <div id="posterVisible">
+                    <div id="posterHidden">
+                        <div class="swiper-container">
+                            <div class="hiddenSwiper swiper-wrapper">
+                                <div class="poster poster_1 swiper-slide"></div>
+                                <div class="poster poster_2 swiper-slide"></div>
+                                <div class="poster poster_3 swiper-slide" ></div>
+                                <div class="poster poster_4 swiper-slide"></div>
+                                <div class="poster poster_5 swiper-slide"></div>
+                                <div class="poster poster_6 swiper-slide"></div>
+                                <div class="poster poster_7 swiper-slide"></div>
+                                <div class="poster poster_8 swiper-slide"></div>
+                                <div class="poster poster_9 swiper-slide"></div>
+                                <div class="poster poster_10 swiper-slide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 포스터 스와이프 슬라이드 -->
+    <script src="js/swiperPosterSlide.js"></script>
+
     <div id="wrap3PerformancePost"></div>
     <div id="wrap4PerformancePhoto"></div>
     <div id="wrap5BestPerformance"></div>

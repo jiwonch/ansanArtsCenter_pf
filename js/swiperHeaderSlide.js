@@ -8,7 +8,8 @@ const swiper = new Swiper('.swiper',{
     centeredSlides: true,
     speed: 1000,
     autoplay: {
-        delay: 5500,
+        // 5500
+        delay: 6000,
         disableOnInteraction: false,
     },
 
