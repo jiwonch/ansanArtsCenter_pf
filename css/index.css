@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* use font */
 @font-face {
     font-family: 'HS-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
@@ -44,6 +45,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
 
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -66,6 +75,7 @@ table {
     border-collapse: collapse;
 }
 
+/* Header start */
 header{
     width: 100%;
     height: 100px;
@@ -127,6 +137,8 @@ header.on {
     height: 100%;
 }
 
+/* Main start */
+/* headerSlider */
 #wrap1headerSlide{
     width: 100%;
     height: 715px;
@@ -160,6 +172,7 @@ header.on {
     height: 100%;
 }
 
+/* slide Text */
 .slideText {
     position: absolute;
     height: 100%;
@@ -251,6 +264,7 @@ header.on {
     margin-left: -15%;
 }
 
+/* Performance Information */
 #wrap2PerformanceInformation{
     width: 100%;
     height: 1145px;
@@ -267,9 +281,12 @@ header.on {
     font-size: 45px;
     font-weight: bolder;
     color: #333;
-    font-family: 'Signika', sans-serif;
+    font-family: '국립박물관문화재단클래식B';
     padding-left: 15px;
+}
 
+#informationTitle h1 span{
+    color: #f18b1e;
 }
 
 #infomationPoster{
@@ -308,9 +325,11 @@ header.on {
 }
 
 .poster{
+    float: left;
+    margin-left: 0;
     width: 420px !important;
     height: 680px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .poster_1{
@@ -353,24 +372,105 @@ header.on {
     background-image: url("../img/index/information_10.jpg");
 }
 
+/* Poster overlay */
+.posterOverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 140px 10px;
+}
+
+.posterOverlay h3{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'EliceDigitalBaeum-Bd';
+    margin-left: 15px;
+}
+
+.pofa-color{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'EliceDigitalBaeum-Bd';
+}
+
+.poster_text a{
+    color: #f18b1e;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 25%;
+    font-family: 'EliceDigitalBaeum-Bd';
+}
+
+.posterOverlay hr{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    color: #f18b1e;
+}
+
+/* performance post */
 #wrap3PerformancePost{
     width: 100%;
     height: 1195px;
-    background-color: thistle;
+    padding: 120px 0;
 }
 
+#performancePost{
+    border: 1px solid greenyellow;
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+#postTitle{
+    width: 100%;
+    height: 165px;
+    border: 1px solid red;
+}
+
+#postTitle h1{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333;
+    font-family: '국립박물관문화재단클래식B';
+    padding-left: 15px;
+}
+
+#postTitle h1 span{
+    color: #f18b1e;
+}
+
+#postBox{
+    width: 100%;
+    height: 740px;
+}
+
+/* Performance section Photo Start */
 #wrap4PerformancePhoto{
     width: 100%;
     height: 1780px;
     background-color: palegreen;
 }
 
-#wrap5BestPerformance{
+/* Performance notice */
+#wrap5PerformanceNotice{
     width: 100%;
     height: 845px;
     background-color: darksalmon;
 }
 
+/* footer start */
 footer{
     width: 100%;
     height: 610px;
