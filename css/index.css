@@ -395,7 +395,6 @@ header.on {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    font-family: 'EliceDigitalBaeum-Bd';
 }
 
 .poster_text a{
@@ -424,10 +423,21 @@ header.on {
     width: 100%;
     height: 1195px;
     padding: 120px 0;
+    position: relative;
+}
+
+#postBox::after{
+    content: "";
+    position: absolute;
+    top: 420px;
+    right: 0;
+    bottom: 40px;
+    left: 25%;
+    background-color: #fdf5eb;
+    z-index: -1;
 }
 
 #performancePost{
-    border: 1px solid greenyellow;
     width: 1200px;
     margin: 0 auto;
     height: auto;
@@ -436,7 +446,6 @@ header.on {
 #postTitle{
     width: 100%;
     height: 165px;
-    border: 1px solid red;
 }
 
 #postTitle h1{
@@ -454,26 +463,157 @@ header.on {
 #postBox{
     width: 100%;
     height: 740px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posts{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postBigBox{
+    width: 100%;
+    height: 44%;
+    overflow: hidden;
+    position: relative;
+}
+
+.smallBox{
+    width: 100%;
+    height: 52%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postSmallBox{
+    width: 47.5%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.postBigBox a img{
+    width: 100%;
+    height: 100%;
+}
+
+.postSmallBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.postBigBox:hover .postImg, .postSmallBox:hover .postImg {
+    transform: rotate(-7deg) scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.overlayPost{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+.overlayPost h3{
+    color: #fff;
+    font-size: 27px;
+    padding-left: 15px;
+    font-family: 'EliceDigitalBaeum-Bd';
+    font-weight: bold;
+}
+
+.postText span{
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.postText a{
+    color: #f18b1e;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 1.7%;
+    font-family: 'EliceDigitalBaeum-Bd';
+}
+
+.overlayPost hr{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#morePost{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.viewPost{
+    margin-left: 70%;
+    width: 300px;
+    border-bottom: 1px solid #f18b1e;
+    padding: 10px;
+    text-align: right;
+}
+
+.viewPost a{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
 }
 
 /* Performance section Photo Start */
 #wrap4PerformancePhoto{
     width: 100%;
     height: 1780px;
-    background-color: palegreen;
+    padding: 120px 0;
+    border: 2px solid red;
 }
 
-/* Performance notice */
-#wrap5PerformanceNotice{
+#photoTitle{
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+    border: 1px solid darkorchid;
+}
+
+#photoImage{
     width: 100%;
-    height: 845px;
-    background-color: darksalmon;
+    height: 1265px;
+    border: 1px solid cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photoBox{
+    max-width: 25%;
+    flex: 0 0 25%;
+    border: 1px solid lightseagreen;
+}
+
+.performancePhoto{
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
 }
 
 /* footer start */
 footer{
     width: 100%;
     height: 610px;
-    background-color: #f1f9ff;
+    background-color: darksalmon;
 }
 
