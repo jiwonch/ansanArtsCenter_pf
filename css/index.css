@@ -515,6 +515,10 @@ header.on {
     transition: all 0.3s ease-in-out;
 }
 
+.postImg{
+    transition: all 0.3s ease-in-out;
+}
+
 .overlayPost{
     position: absolute;
     top: 0;
@@ -593,21 +597,75 @@ header.on {
 #photoImage{
     width: 100%;
     height: 1265px;
-    border: 1px solid cornflowerblue;
     display: flex;
     flex-wrap: wrap;
 }
 
 .photoBox{
-    max-width: 25%;
     flex: 0 0 25%;
-    border: 1px solid lightseagreen;
+    max-width: 25%;
 }
 
 .performancePhoto{
     width: 100%;
     height: auto;
-    background-color: antiquewhite;
+}
+
+.performancePhoto a img{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.artOverlay{
+    position: absolute;
+    background-color: rgba(105, 105, 105, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.photo1{
+    display: flex;
+    align-items: center;
+}
+
+.photo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.photo_2{
+    padding: 7% 0 0 0;
+}
+
+.photoPadding{
+    padding-bottom: 15%;
+}
+
+.photo3{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_3{
+    padding: 2% 0 5% 0 ;
+}
+
+.photo4{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_1{
+    padding-left: 0px !important;
+}
+
+.photo_4{
+    padding-right: 0px !important;
+    padding-top: 45%;
 }
 
 /* footer start */
