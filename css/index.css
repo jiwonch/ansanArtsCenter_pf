@@ -52,6 +52,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* reset */
 * {
     margin: 0;
@@ -69,6 +83,7 @@ ol {
 
 a {
     text-decoration: none;
+    color: #333;
 }
 
 table {
@@ -76,14 +91,14 @@ table {
 }
 
 /* Header start */
-header{
+header {
     width: 100%;
     height: 100px;
     position: sticky;
     position: -webkit-sticky;
 }
 
-#headerContent{
+#headerContent {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -99,18 +114,18 @@ header.on {
     box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
 }
 
-#headerContent img{
+#headerContent img {
     width: 236px;
     height: 61px;
 }
 
-#headerContent nav{
+#headerContent nav {
     width: 450px;
     height: 100px;
     display: flex;
 }
 
-#headerContent nav ul{
+#headerContent nav ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -118,12 +133,12 @@ header.on {
     justify-content: space-around;
 }
 
-#headerContent nav ul li a{
+#headerContent nav ul li a {
     font-weight: bold;
     color: #333;
 }
 
-#headerContent button{
+#headerContent button {
     width: 45px;
     height: 45px;
     border: 2px solid #f18b1e;
@@ -132,42 +147,42 @@ header.on {
     cursor: pointer;
 }
 
-#headerContent button img{
+#headerContent button img {
     width: 100%;
     height: 100%;
 }
 
 /* Main start */
 /* headerSlider */
-#wrap1headerSlide{
+#wrap1headerSlide {
     width: 100%;
     height: 715px;
     position: relative;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     width: 100%;
     height: 100%;
 }
 
-#slideHeader1{
+#slideHeader1 {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#slideHeader1 a{
+#slideHeader1 a {
     width: 100%;
     height: 100%;
 }
 
-.slideImg{
+.slideImg {
     width: 57%;
     height: 100%;
     float: left;
 }
 
-.slideImg a img{
+.slideImg a img {
     width: 100%;
     height: 100%;
 }
@@ -183,32 +198,32 @@ header.on {
     flex-direction: column;
 }
 
-.boxSlideText{
+.boxSlideText {
     width: 420px;
     float: left;
     margin-top: 50px;
     height: 200px;
 }
 
-.fa-calendar{
+.fa-calendar {
     padding: 15px;
     color: #999;
     font-size: 12px;
 }
 
-.fa-comments{
+.fa-comments {
     color: #999;
     font-size: 12px;
 }
 
-.boxSlideText a{
+.boxSlideText a {
     font-size: 15px;
     color: #333;
     font-weight: bold;
     margin-left: 40%;
 }
 
-.s1TextBox h1{
+.s1TextBox h1 {
     font-size: 100px;
     font-weight: bold;
     text-align: left;
@@ -216,13 +231,13 @@ header.on {
     background-size: cover;
     background-position: bottom right;
     background-attachment: fixed;
-    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
     -webkit-background-clip: text;
     font-family: '국립박물관문화재단클래식B';
     margin-left: -15%;
 }
 
-.s2TextBox h1{
+.s2TextBox h1 {
     font-size: 100px;
     font-weight: bold;
     text-align: left;
@@ -230,13 +245,13 @@ header.on {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
     -webkit-background-clip: text;
     font-family: '국립박물관문화재단클래식B';
     margin-left: -15%;
 }
 
-.s3TextBox h1{
+.s3TextBox h1 {
     font-size: 100px;
     font-weight: bold;
     text-align: left;
@@ -244,13 +259,13 @@ header.on {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
     -webkit-background-clip: text;
     font-family: '국립박물관문화재단클래식B';
     margin-left: -15%;
 }
 
-.s4TextBox h1{
+.s4TextBox h1 {
     font-size: 100px;
     font-weight: bold;
     text-align: left;
@@ -258,26 +273,26 @@ header.on {
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;
-    -webkit-text-fill-color: rgba(255, 255, 255,0.1);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
     -webkit-background-clip: text;
     font-family: '국립박물관문화재단클래식B';
     margin-left: -15%;
 }
 
 /* Performance Information */
-#wrap2PerformanceInformation{
+#wrap2PerformanceInformation {
     width: 100%;
     height: 1145px;
     padding: 150px 0 118px 0;
 }
 
-#informationTitle{
+#informationTitle {
     width: 1200px;
     height: 165px;
     margin: 0 auto;
 }
 
-#informationTitle h1{
+#informationTitle h1 {
     font-size: 45px;
     font-weight: bolder;
     color: #333;
@@ -285,18 +300,18 @@ header.on {
     padding-left: 15px;
 }
 
-#informationTitle h1 span{
+#informationTitle h1 span {
     color: #f18b1e;
 }
 
-#infomationPoster{
+#infomationPoster {
     width: 100%;
     height: 712px;
     position: relative;
     padding-right: 0;
 }
 
-#infomationPoster::after{
+#infomationPoster::after {
     content: "";
     position: absolute;
     top: 120px;
@@ -307,24 +322,24 @@ header.on {
     z-index: -1;
 }
 
-#posterVisible{
+#posterVisible {
     width: 81.6%;
     height: 711px;
     float: right;
     overflow: hidden;
 }
 
-#posterHidden{
+#posterHidden {
     position: relative;
     width: 100%;
     height: 711px;
 }
 
-.hiddenSwiper{
+.hiddenSwiper {
     width: 100%;
 }
 
-.poster{
+.poster {
     float: left;
     margin-left: 0;
     width: 420px !important;
@@ -332,48 +347,48 @@ header.on {
     margin: 0 10px;
 }
 
-.poster_1{
+.poster_1 {
     background-image: url("../img/index/information_1.jpg");
 }
 
-.poster_2{
+.poster_2 {
     background-image: url("../img/index/information_2.jpg");
 }
 
-.poster_3{
+.poster_3 {
     background-image: url("../img/index/information_3.jpg");
 }
 
-.poster_4{
+.poster_4 {
     background-image: url("../img/index/information_4.jpg");
 }
 
-.poster_5{
+.poster_5 {
     background-image: url("../img/index/information_5.jpg");
 }
 
-.poster_6{
+.poster_6 {
     background-image: url("../img/index/information_6.jpg");
 }
 
-.poster_7{
+.poster_7 {
     background-image: url("../img/index/information_7.jpg");
 }
 
-.poster_8{
+.poster_8 {
     background-image: url("../img/index/information_8.jpg");
 }
 
-.poster_9{
+.poster_9 {
     background-image: url("../img/index/information_9.jpg");
 }
 
-.poster_10{
+.poster_10 {
     background-image: url("../img/index/information_10.jpg");
 }
 
 /* Poster overlay */
-.posterOverlay{
+.posterOverlay {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -383,7 +398,7 @@ header.on {
     padding: 0 0 140px 10px;
 }
 
-.posterOverlay h3{
+.posterOverlay h3 {
     color: white;
     font-weight: bold;
     font-size: 40px;
@@ -391,13 +406,13 @@ header.on {
     margin-left: 15px;
 }
 
-.pofa-color{
+.pofa-color {
     color: white;
     font-weight: bold;
     font-size: 15px;
 }
 
-.poster_text a{
+.poster_text a {
     color: #f18b1e;
     font-weight: bold;
     font-size: 15px;
@@ -405,12 +420,13 @@ header.on {
     font-family: 'EliceDigitalBaeum-Bd';
 }
 
-.posterOverlay hr{
+.posterOverlay hr {
     width: 95%;
     margin: 0 auto;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     background-color: rgba(255, 255, 255, 0.3);
     width: 60px;
     height: 60px;
@@ -419,14 +435,14 @@ header.on {
 }
 
 /* performance post */
-#wrap3PerformancePost{
+#wrap3PerformancePost {
     width: 100%;
     height: 1195px;
     padding: 120px 0;
     position: relative;
 }
 
-#postBox::after{
+#postBox::after {
     content: "";
     position: absolute;
     top: 420px;
@@ -437,18 +453,18 @@ header.on {
     z-index: -1;
 }
 
-#performancePost{
+#performancePost {
     width: 1200px;
     margin: 0 auto;
     height: auto;
 }
 
-#postTitle{
+#postTitle {
     width: 100%;
     height: 165px;
 }
 
-#postTitle h1{
+#postTitle h1 {
     font-size: 45px;
     font-weight: bolder;
     color: #333;
@@ -456,11 +472,11 @@ header.on {
     padding-left: 15px;
 }
 
-#postTitle h1 span{
+#postTitle h1 span {
     color: #f18b1e;
 }
 
-#postBox{
+#postBox {
     width: 100%;
     height: 740px;
     display: flex;
@@ -468,7 +484,7 @@ header.on {
     justify-content: space-between;
 }
 
-.posts{
+.posts {
     width: 49%;
     height: 100%;
     display: flex;
@@ -477,14 +493,14 @@ header.on {
     justify-content: space-between;
 }
 
-.postBigBox{
+.postBigBox {
     width: 100%;
     height: 44%;
     overflow: hidden;
     position: relative;
 }
 
-.smallBox{
+.smallBox {
     width: 100%;
     height: 52%;
     display: flex;
@@ -493,33 +509,34 @@ header.on {
     justify-content: space-between;
 }
 
-.postSmallBox{
+.postSmallBox {
     width: 47.5%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.postBigBox a img{
+.postBigBox a img {
     width: 100%;
     height: 100%;
 }
 
-.postSmallBox img{
+.postSmallBox img {
     width: 100%;
     height: 100%;
 }
 
-.postBigBox:hover .postImg, .postSmallBox:hover .postImg {
+.postBigBox:hover .postImg,
+.postSmallBox:hover .postImg {
     transform: rotate(-7deg) scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
-.postImg{
+.postImg {
     transition: all 0.3s ease-in-out;
 }
 
-.overlayPost{
+.overlayPost {
     position: absolute;
     top: 0;
     left: 0;
@@ -533,7 +550,7 @@ header.on {
     padding-bottom: 50px;
 }
 
-.overlayPost h3{
+.overlayPost h3 {
     color: #fff;
     font-size: 27px;
     padding-left: 15px;
@@ -541,12 +558,12 @@ header.on {
     font-weight: bold;
 }
 
-.postText span{
+.postText span {
     font-size: 12px;
     padding-left: 15px;
 }
 
-.postText a{
+.postText a {
     color: #f18b1e;
     font-size: 13px;
     font-weight: bold;
@@ -554,17 +571,17 @@ header.on {
     font-family: 'EliceDigitalBaeum-Bd';
 }
 
-.overlayPost hr{
+.overlayPost hr {
     width: 95%;
     margin: 0 auto;
 }
 
-#morePost{
+#morePost {
     width: 1200px;
     margin: 50px auto;
 }
 
-.viewPost{
+.viewPost {
     margin-left: 70%;
     width: 300px;
     border-bottom: 1px solid #f18b1e;
@@ -572,7 +589,7 @@ header.on {
     text-align: right;
 }
 
-.viewPost a{
+.viewPost a {
     color: #333;
     font-weight: bold;
     font-size: 15px;
@@ -580,91 +597,254 @@ header.on {
 }
 
 /* Performance section Photo Start */
-#wrap4PerformancePhoto{
+#wrap4PerformancePhoto {
     width: 100%;
     height: 1780px;
     padding: 120px 0;
-    border: 2px solid red;
 }
 
-#photoTitle{
+#photoTitle {
     width: 1200px;
-    height: 270px;
+    height: 240px;
     margin: 0 auto;
-    border: 1px solid darkorchid;
 }
 
-#photoImage{
+#photoTitle h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333;
+    font-family: '국립박물관문화재단클래식B';
+    padding-left: 15px;
+}
+
+#photoTitle h1 span {
+    color: #f18b1e;
+}
+
+#photoTitle h3 {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+#photoTitle h3 span {
+    color: #f18b1e;
+}
+
+#photoTitle h4 {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+#photoImage {
     width: 100%;
     height: 1265px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.photoBox{
+.photoBox {
     flex: 0 0 25%;
     max-width: 25%;
 }
 
-.performancePhoto{
+.performancePhoto {
     width: 100%;
     height: auto;
 }
 
-.performancePhoto a img{
+.performancePhoto a img {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
 }
 
-.photo1{
+.photo1 {
     display: flex;
     align-items: center;
 }
 
-.photo2{
+.photo2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.photo_2{
+.photo_2 {
     padding: 7% 0 0 0;
 }
 
-.photoPadding{
+.photoPadding {
     padding-bottom: 15%;
 }
 
-.photo3{
+.photo3 {
     display: flex;
     flex-direction: column;
 }
 
-.photo_3{
-    padding: 2% 0 5% 0 ;
+.photo_3 {
+    padding: 2% 0 5% 0;
 }
 
-.photo4{
+.photo4 {
     display: flex;
     flex-direction: column;
 }
 
-.photo_1{
+.photo_1 {
     padding-left: 0px !important;
 }
 
-.photo_4{
+.photo_4 {
     padding-right: 0px !important;
     padding-top: 45%;
 }
 
-/* footer start */
-footer{
+/* 안산문화예술의전당 사업소개 */
+#wrap5ProjectIntroduction {
     width: 100%;
-    height: 610px;
-    background-color: darksalmon;
+    height: 840px;
+    padding-bottom: 120px;
 }
 
+#projectTitle {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+#projectTitle h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333;
+    font-family: '국립박물관문화재단클래식B';
+    padding-left: 15px;
+}
+
+#projectTitle h1 span {
+    color: #f18b1e;
+}
+
+#projectCard {
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.card {
+    width: 49%;
+    height: 31%;
+    border: 2px solid #f18b1e;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardIcon {
+    width: 17%;
+    height: 60%;
+    /* background-color: #fff; */
+    margin-left: 5%;
+    border-radius: 50%;
+    border: 3px double #fdf5eb;
+    position: relative;
+    background-color: #f18b1e;
+}
+
+.cardIcon img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cardText {
+    width: 75%;
+    height: 100%;
+    background-color: #fdf5eb;
+    padding: 20px;
+    font-family: 'NanumBarunpen';
+}
+
+.cardText h3 {
+    height: 28%;
+    font-size: 25px;
+}
+
+.cardText h4 {
+    height: 50%;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cardText p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardText i {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cardText:hover h3 {
+    color: #f18b1e;
+}
+
+.card:hover {
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+    border-image-slice: 1;
+}
+
+/* footer start */
+.lastLogo {
+    width: 100%;
+    height: 400px;
+    background-color: #fdf5eb;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+}
+
+.title {
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+    color: #444;
+}
+
+.subtitle {
+    font-size: 1vw;
+    color: #777;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* Particle container. */
+#particle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
