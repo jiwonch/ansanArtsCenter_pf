@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 /* use font */
 @font-face {
@@ -819,32 +820,19 @@ header.on {
     overflow: hidden;
     font-family: 'PT Sans', sans-serif;
     position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.title {
-    font-size: 5vw;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 5%;
-    color: #444;
+.button {
+    color: #59C3C3;
+    cursor: pointer;
+    font-family: "Abril Fatface", sans;
+    font-size: 50px;
+    letter-spacing: -1px;
 }
 
-.subtitle {
-    font-size: 1vw;
-    color: #777;
-    font-weight: normal;
-    text-align: center;
-    margin-top: 10px;
-}
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
-/* Particle container. */
-#particle-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.button:hover {
+    color: #E07A5F;
 }
