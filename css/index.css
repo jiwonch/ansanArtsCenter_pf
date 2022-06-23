@@ -67,6 +67,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'UhBeeSeulvely';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WooridaumB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WooridaumL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
 /* reset */
 * {
     margin: 0;
@@ -95,8 +116,6 @@ table {
 header {
     width: 100%;
     height: 100px;
-    position: sticky;
-    position: -webkit-sticky;
 }
 
 #headerContent {
@@ -113,6 +132,7 @@ header.on {
     background-color: white;
     z-index: 20;
     box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
+    position: fixed;
 }
 
 #headerContent img {
@@ -137,6 +157,7 @@ header.on {
 #headerContent nav ul li a {
     font-weight: bold;
     color: #333;
+    font-family: 'WooridaumL';
 }
 
 #headerContent button {
@@ -222,6 +243,7 @@ header.on {
     color: #333;
     font-weight: bold;
     margin-left: 40%;
+    font-family: 'WooridaumL';
 }
 
 .s1TextBox h1 {
@@ -418,7 +440,7 @@ header.on {
     font-weight: bold;
     font-size: 15px;
     padding-left: 25%;
-    font-family: 'EliceDigitalBaeum-Bd';
+    font-family: 'WooridaumL';
 }
 
 .posterOverlay hr {
@@ -569,7 +591,7 @@ header.on {
     font-size: 13px;
     font-weight: bold;
     padding-left: 1.7%;
-    font-family: 'EliceDigitalBaeum-Bd';
+    font-family: 'WooridaumB';
 }
 
 .overlayPost hr {
@@ -595,6 +617,7 @@ header.on {
     font-weight: bold;
     font-size: 15px;
     margin-right: 10px;
+    font-family: 'WooridaumB';
 }
 
 /* Performance section Photo Start */
@@ -602,6 +625,9 @@ header.on {
     width: 100%;
     height: 1780px;
     padding: 120px 0;
+    background-image: url('../img/index/middle_logo.png');
+    background-repeat: no-repeat;
+    background-position: 90% 105%;
 }
 
 #photoTitle {
@@ -812,27 +838,128 @@ header.on {
     border-image-slice: 1;
 }
 
-/* footer start */
-.lastLogo {
+/* LOGO Particle */
+
+#snow {
     width: 100%;
-    height: 400px;
-    background-color: #fdf5eb;
-    overflow: hidden;
-    font-family: 'PT Sans', sans-serif;
+    height: 200px;
+    background-color: #333;
     position: relative;
-    align-items: center;
+    text-align: center;
+}
+
+#snow h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    font-family: 'UhBeeSeulvely';
+}
+
+#snow h2:hover {
+    color: #f18b1e;
+}
+
+/* footer start */
+/* 첫번째 footer */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+}
+
+#ft1 {
+    width: 100%;
+    height: 250px;
+}
+
+#footerContent {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.ftTitle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.button {
-    color: #59C3C3;
-    cursor: pointer;
-    font-family: "Abril Fatface", sans;
-    font-size: 50px;
-    letter-spacing: -1px;
+.ftTitle>li>a {
+    font-weight: bold;
+    font-size: 25px;
+    color: #f18b1e;
+    line-height: 60px;
+    font-family: 'WooridaumB';
 }
 
-.button:hover {
-    color: #E07A5F;
+.ftTitle>li>a:hover {
+    color: #fff;
+    border-bottom: 2px solid #f18b1e;
+}
+
+.ftSub li>a {
+    line-height: 30px !important;
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 2px;
+    color: #fff;
+    font-family: 'WooridaumL';
+}
+
+.ftSub li>a:hover {
+    border-bottom: 2px solid #f18b1e;
+}
+
+/* 두번째 footer */
+#ft2 {
+    width: 100%;
+    height: 150px;
+    background-color: #111;
+}
+
+#ft2Content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.ft2Address{
+    color: #aaa;
+    width: 50%;
+    height: 100%;
+}
+
+.ft2Address p{
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 10px;
+    line-height: 25px;
+    font-family: 'WooridaumL';
+}
+
+.ft2Address p:first-child{
+    padding-top: 30px;
+}
+
+.ft2Sns{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sns{
+    width: 55px;
+    height: 55px;
+    margin: 0 0px 0 40px;
+}
+
+.sns a img{
+    width: 100%;
+    height: 100%;
 }

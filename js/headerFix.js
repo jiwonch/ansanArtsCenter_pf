@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 function scrollController() {
     currentScrollTop = $(window).scrollTop();
-    if (currentScrollTop > 100) {
+    if (currentScrollTop > 90) {
         $("header").addClass("on");
     } else {
         $("header").removeClass("on")
