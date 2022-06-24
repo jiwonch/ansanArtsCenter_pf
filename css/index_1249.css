@@ -112,13 +112,14 @@ table {
     border-collapse: collapse;
 }
 
-@media screen and (min-width: 1250px) {
+
+@media screen and (max-width:1249px) {
 
     /* Main start */
     /* headerSlider */
     #wrap1headerSlide {
         width: 100%;
-        height: 715px;
+        height: 600px;
         position: relative;
     }
 
@@ -139,7 +140,7 @@ table {
     }
 
     .slideImg {
-        width: 57%;
+        width: 65%;
         height: 100%;
         float: left;
     }
@@ -151,20 +152,24 @@ table {
 
     /* slide Text */
     .slideText {
+        background-color: white;
         position: absolute;
-        height: 100%;
-        width: 43%;
-        top: 23%;
+        height: auto;
+        width: 60%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        padding-top: 5%;
     }
 
     .boxSlideText {
-        width: 420px;
-        float: left;
-        margin-top: 50px;
-        height: 200px;
+        width:400px;
+        height: 150px;
     }
 
     .fa-calendar {
@@ -187,9 +192,10 @@ table {
     }
 
     .s1TextBox h1 {
-        font-size: 100px;
+        font-size: 80px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/blue.jpg);
         background-size: cover;
         background-position: bottom right;
@@ -197,13 +203,13 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     .s2TextBox h1 {
-        font-size: 100px;
+        font-size: 80px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/green.jpg);
         background-size: cover;
         background-position: center;
@@ -211,13 +217,14 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
+
     }
 
     .s3TextBox h1 {
-        font-size: 100px;
+        font-size: 80px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/conceert_reverse.jpg);
         background-size: cover;
         background-position: top;
@@ -225,13 +232,13 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     .s4TextBox h1 {
-        font-size: 100px;
+        font-size: 80px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/swing.jpg);
         background-size: cover;
         background-position: 50%;
@@ -239,18 +246,17 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     /* Performance Information */
     #wrap2PerformanceInformation {
         width: 100%;
-        height: 1145px;
+        height: 950px;
         padding: 150px 0 118px 0;
     }
 
     #informationTitle {
-        width: 1200px;
+        width: 950px;
         height: 165px;
         margin: 0 auto;
     }
@@ -269,7 +275,7 @@ table {
 
     #infomationPoster {
         width: 100%;
-        height: 712px;
+        height: 500px;
         position: relative;
         padding-right: 0;
     }
@@ -277,7 +283,7 @@ table {
     #infomationPoster::after {
         content: "";
         position: absolute;
-        top: 120px;
+        top: 100px;
         right: 15%;
         bottom: -50px;
         left: 0;
@@ -287,7 +293,7 @@ table {
 
     #posterVisible {
         width: 81.6%;
-        height: 711px;
+        height: 611px;
         float: right;
         overflow: hidden;
     }
@@ -295,7 +301,7 @@ table {
     #posterHidden {
         position: relative;
         width: 100%;
-        height: 711px;
+        height: 611px;
     }
 
     .hiddenSwiper {
@@ -305,49 +311,69 @@ table {
     .poster {
         float: left;
         margin-left: 0;
-        width: 420px !important;
-        height: 680px;
+        width: 290px !important;
+        height: 460px;
         margin: 0 10px;
     }
 
     .poster_1 {
         background-image: url("../img/index/information_1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_2 {
         background-image: url("../img/index/information_2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_3 {
         background-image: url("../img/index/information_3.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_4 {
         background-image: url("../img/index/information_4.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_5 {
         background-image: url("../img/index/information_5.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_6 {
         background-image: url("../img/index/information_6.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_7 {
         background-image: url("../img/index/information_7.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_8 {
         background-image: url("../img/index/information_8.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_9 {
         background-image: url("../img/index/information_9.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_10 {
         background-image: url("../img/index/information_10.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     /* Poster overlay */
@@ -358,13 +384,13 @@ table {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 0 0 140px 10px;
+        padding: 0 0 50px 5px;
     }
 
     .posterOverlay h3 {
         color: white;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'EliceDigitalBaeum-Bd';
         margin-left: 15px;
     }
@@ -372,14 +398,14 @@ table {
     .pofa-color {
         color: white;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .poster_text a {
         color: #f18b1e;
         font-weight: bold;
-        font-size: 15px;
-        padding-left: 25%;
+        font-size: 12px;
+        padding-left: 10%;
         font-family: 'WooridaumL';
     }
 
@@ -400,15 +426,15 @@ table {
     /* performance post */
     #wrap3PerformancePost {
         width: 100%;
-        height: 1195px;
-        padding: 120px 0;
+        height: 990px;
+        padding: 80px 0;
         position: relative;
     }
 
     #postBox::after {
         content: "";
         position: absolute;
-        top: 420px;
+        top: 450px;
         right: 0;
         bottom: 40px;
         left: 25%;
@@ -417,7 +443,7 @@ table {
     }
 
     #performancePost {
-        width: 1200px;
+        width: 950px;
         margin: 0 auto;
         height: auto;
     }
@@ -441,7 +467,7 @@ table {
 
     #postBox {
         width: 100%;
-        height: 740px;
+        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -515,20 +541,20 @@ table {
 
     .overlayPost h3 {
         color: #fff;
-        font-size: 27px;
+        font-size: 25px;
         padding-left: 15px;
         font-family: 'EliceDigitalBaeum-Bd';
         font-weight: bold;
     }
 
     .postText span {
-        font-size: 12px;
+        font-size: 10px;
         padding-left: 15px;
     }
 
     .postText a {
         color: #f18b1e;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: bold;
         padding-left: 1.7%;
         font-family: 'WooridaumB';
@@ -540,12 +566,12 @@ table {
     }
 
     #morePost {
-        width: 1200px;
+        width: 950px;
         margin: 50px auto;
     }
 
     .viewPost {
-        margin-left: 70%;
+        margin-left: 68%;
         width: 300px;
         border-bottom: 1px solid #f18b1e;
         padding: 10px;
@@ -571,7 +597,7 @@ table {
     }
 
     #photoTitle {
-        width: 1200px;
+        width: 950px;
         height: 240px;
         margin: 0 auto;
     }
@@ -681,7 +707,7 @@ table {
     }
 
     #projectTitle {
-        width: 1200px;
+        width: 950px;
         height: 180px;
         margin: 0 auto;
     }
@@ -699,8 +725,8 @@ table {
     }
 
     #projectCard {
-        width: 1200px;
-        height: 550px;
+        width: 950px;
+        height: 480px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;

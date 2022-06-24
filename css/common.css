@@ -1,0 +1,497 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+/* use font */
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ELAND_Nice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRA_SONGEULSSI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_SONGEULSSI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UhBeeSeulvely';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WooridaumB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WooridaumL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 1249px) {
+
+    /* Header start */
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    #headerContent {
+        width: 950px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.on {
+        width: 100%;
+        background-color: white;
+        z-index: 20;
+        box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
+        position: fixed;
+    }
+
+    #headerContent img {
+        width: 236px;
+        height: 61px;
+    }
+
+    #headerContent nav {
+        width: 450px;
+        height: 100px;
+        display: flex;
+    }
+
+    #headerContent nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #headerContent nav ul li a {
+        font-weight: bold;
+        color: #333;
+        font-family: 'WooridaumL';
+    }
+
+    #headerContent button {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #f18b1e;
+        background-color: transparent;
+        border-radius: 30%;
+        cursor: pointer;
+    }
+
+    #headerContent button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* LOGO Particle */
+
+    #snow {
+        width: 100%;
+        height: 200px;
+        background-color: #333;
+        position: relative;
+        text-align: center;
+    }
+
+    #snow h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5em;
+        color: white;
+        font-family: 'UhBeeSeulvely';
+    }
+
+    #snow h2:hover {
+        color: #f18b1e;
+    }
+
+    /* footer start */
+    /* 첫번째 footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #333;
+    }
+
+    #ft1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    #footerContent {
+        width: 950px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .ftTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ftTitle>li>a {
+        font-weight: bold;
+        font-size: 25px;
+        color: #f18b1e;
+        line-height: 60px;
+        font-family: 'WooridaumB';
+    }
+
+    .ftTitle>li>a:hover {
+        color: #fff;
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    .ftSub li>a {
+        line-height: 30px !important;
+        font-weight: 300;
+        font-size: 15px;
+        padding-left: 2px;
+        color: #fff;
+        font-family: 'WooridaumL';
+    }
+
+    .ftSub li>a:hover {
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    /* 두번째 footer */
+    #ft2 {
+        width: 100%;
+        height: 150px;
+        background-color: #111;
+    }
+
+    #ft2Content {
+        width: 950px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .ft2Address {
+        color: #aaa;
+        width: 50%;
+        height: 100%;
+    }
+
+    .ft2Address p {
+        font-weight: 500;
+        font-size: 13px;
+        padding-top: 10px;
+        line-height: 25px;
+        font-family: 'WooridaumL';
+    }
+
+    .ft2Address p:first-child {
+        padding-top: 30px;
+    }
+
+    .ft2Sns {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .sns {
+        width: 55px;
+        height: 55px;
+        margin: 0 0px 0 40px;
+    }
+
+    .sns a img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+
+    /* Header start */
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    #headerContent {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.on {
+        background-color: white;
+        z-index: 20;
+        box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
+        position: fixed;
+    }
+
+    #headerContent img {
+        width: 236px;
+        height: 61px;
+    }
+
+    #headerContent nav {
+        width: 450px;
+        height: 100px;
+        display: flex;
+    }
+
+    #headerContent nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #headerContent nav ul li a {
+        font-weight: bold;
+        color: #333;
+        font-family: 'WooridaumL';
+    }
+
+    #headerContent button {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #f18b1e;
+        background-color: transparent;
+        border-radius: 30%;
+        cursor: pointer;
+    }
+
+    #headerContent button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* LOGO Particle */
+
+    #snow {
+        width: 100%;
+        height: 200px;
+        background-color: #333;
+        position: relative;
+        text-align: center;
+    }
+
+    #snow h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        color: white;
+        font-family: 'UhBeeSeulvely';
+    }
+
+    #snow h2:hover {
+        color: #f18b1e;
+    }
+
+    /* footer start */
+    /* 첫번째 footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #333;
+    }
+
+    #ft1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    #footerContent {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .ftTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ftTitle>li>a {
+        font-weight: bold;
+        font-size: 25px;
+        color: #f18b1e;
+        line-height: 60px;
+        font-family: 'WooridaumB';
+    }
+
+    .ftTitle>li>a:hover {
+        color: #fff;
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    .ftSub li>a {
+        line-height: 30px !important;
+        font-weight: 300;
+        font-size: 15px;
+        padding-left: 2px;
+        color: #fff;
+        font-family: 'WooridaumL';
+    }
+
+    .ftSub li>a:hover {
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    /* 두번째 footer */
+    #ft2 {
+        width: 100%;
+        height: 150px;
+        background-color: #111;
+    }
+
+    #ft2Content {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .ft2Address {
+        color: #aaa;
+        width: 50%;
+        height: 100%;
+    }
+
+    .ft2Address p {
+        font-weight: 500;
+        font-size: 13px;
+        padding-top: 10px;
+        line-height: 25px;
+        font-family: 'WooridaumL';
+    }
+
+    .ft2Address p:first-child {
+        padding-top: 30px;
+    }
+
+    .ft2Sns {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .sns {
+        width: 55px;
+        height: 55px;
+        margin: 0 0px 0 40px;
+    }
+
+    .sns a img {
+        width: 100%;
+        height: 100%;
+    }
+}
