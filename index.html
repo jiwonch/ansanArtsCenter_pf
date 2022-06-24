@@ -12,7 +12,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="http://www.jsdelivr.com/#!particles.js"></script>
+    <script src="//www.jsdelivr.com/#!particles.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/common/facon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -466,17 +466,17 @@
 
     <script>
         $(document).ready(function () {
-            $('.fade1, .fade2, .fade3, .fade4, .fade5, .fade6').hide();
+            $('.fade1, .fade2, .fade3, .fade4, .fade5, .fade6').css({opacity:0});
             $(window).scroll(function () {
                 var ws = $(this).scrollTop();
 
                 if (ws >= 3006) {
-                    $('.fade1').fadeIn();
-                    $('.fade2').delay(500).fadeIn();
-                    $('.fade3').delay(1500).fadeIn();
-                    $('.fade4').delay(800).fadeIn();
-                    $('.fade5').delay(1300).fadeIn();
-                    $('.fade6').delay(1100).fadeIn();
+                    $('.fade1').animate({opacity:1},100);
+                    $('.fade2').animate({opacity:1},500);
+                    $('.fade3').animate({opacity:1},1500);
+                    $('.fade4').animate({opacity:1},800);
+                    $('.fade5').animate({opacity:1},1300);
+                    $('.fade6').animate({opacity:1},1100);
                 }
 
             });
