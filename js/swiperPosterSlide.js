@@ -1,19 +1,67 @@
-const swiper1 = new Swiper('.swiper-container',{
-    //optional parameters
-    direction: 'horizontal',
-    slidesPerView: 3.53,
-    slidesBetween: 7,
-    debugger: true,
-    loop: true,
-    centeredSlides: true,
-    speed: 1500,
-    autoplay: {
-        // 5500
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    navigation:{
-        nextEl:".swiper-button-next",
-        prevEl:".swiper-button-prev",
-    },
-});
+function detechMediaSize() {
+    if (window.matchMedia('(max-width:991px)').matches) {
+        const swiper1 = new Swiper('.swiper-container', {
+            //optional parameters
+            direction: 'horizontal',
+            slidesPerView: 4.05,
+            slidesBetween: 5,
+            debugger: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 1500,
+            autoplay: {
+                // 5500
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    } else if(window.matchMedia('(min-width:992px) and (max-width:1249px)').matches){
+        const swiper1 = new Swiper('.swiper-container', {
+            //optional parameters
+            direction: 'horizontal',
+            slidesPerView: 3.4,
+            slidesBetween: 5,
+            debugger: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 1500,
+            autoplay: {
+                // 5500
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    } if (window.matchMedia('(min-width:1250px').matches) {
+        const swiper1 = new Swiper('.swiper-container', {
+            //optional parameters
+            direction: 'horizontal',
+            slidesPerView: 3.53,
+            slidesBetween: 7,
+            debugger: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 1500,
+            autoplay: {
+                // 5500
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+}
+
+window.addEventListener('resize', detechMediaSize, false);
+
+detechMediaSize();

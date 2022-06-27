@@ -112,7 +112,252 @@ table {
     border-collapse: collapse;
 }
 
-@media screen and (max-width: 1249px) {
+@media screen and (max-width: 991px) {
+
+    /* Header start */
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    #headerContent {
+        width: 750px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+    }
+
+    header.on {
+        width: 100%;
+        background-color: white;
+        z-index: 20;
+        box-shadow: 0 1px 10px 0 rgba(105, 105, 105, 0.3);
+        position: fixed;
+    }
+
+    #headerContent img {
+        width: 236px;
+        height: 61px;
+    }
+
+    #headerContent nav {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        transition: all 0.4s ease-in-out;
+        z-index: 50;
+        /* display: none; */
+    }
+
+
+    .navHide {
+        /* opacity: 0; */
+        display: none;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #nHide ul {
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nHide ul li{
+        padding: 20px;
+    }
+
+    #nHide ul li a {
+        font-weight: bold;
+        color: white;
+        font-size: 25px;
+        font-family: 'WooridaumL';
+    }
+
+    #nHide ul li a:hover{
+        color: #f18b1e;
+    }
+
+    #headerContent button {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #f18b1e;
+        background-color: transparent;
+        border-radius: 30%;
+        cursor: pointer;
+        display: none;
+    }
+
+    #headerContent button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamberger {
+        width: 30px;
+        padding: 0px 5px;
+        z-index: 70;
+    }
+
+    .hamberger>span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        background-color: #f18b1e;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    .hamberger.active span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamberger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamberger.active span:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+
+    /* LOGO Particle */
+
+    #snow {
+        width: 100%;
+        height: 200px;
+        background-color: #333;
+        position: relative;
+        text-align: center;
+    }
+
+    #snow h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5em;
+        color: white;
+        font-family: 'UhBeeSeulvely';
+    }
+
+    #snow h2:hover {
+        color: #f18b1e;
+    }
+
+    /* footer start */
+    /* 첫번째 footer */
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #333;
+    }
+
+    #ft1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    #footerContent {
+        width: 700px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .ftTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ftTitle>li>a {
+        font-weight: bold;
+        font-size: 22px;
+        color: #f18b1e;
+        line-height: 60px;
+        font-family: 'WooridaumB';
+    }
+
+    .ftTitle>li>a:hover {
+        color: #fff;
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    .ftSub li>a {
+        line-height: 30px !important;
+        font-weight: 300;
+        font-size: 14px;
+        padding-left: 2px;
+        color: #fff;
+        font-family: 'WooridaumL';
+    }
+
+    .ftSub li>a:hover {
+        border-bottom: 2px solid #f18b1e;
+    }
+
+    /* 두번째 footer */
+    #ft2 {
+        width: 100%;
+        height: 150px;
+        background-color: #111;
+    }
+
+    #ft2Content {
+        width: 720px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .ft2Address {
+        color: #aaa;
+        width: 50%;
+        height: 100%;
+    }
+
+    .ft2Address p {
+        font-weight: 500;
+        font-size: 13px;
+        padding-top: 10px;
+        line-height: 25px;
+        font-family: 'WooridaumL';
+    }
+
+    .ft2Address p:first-child {
+        padding-top: 30px;
+    }
+
+    .ft2Sns {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .sns {
+        width: 45px;
+        height: 45px;
+        margin: 0 10px 0 15px;
+    }
+
+    .sns a img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1249px) {
 
     /* Header start */
     header {
@@ -175,6 +420,10 @@ table {
     #headerContent button img {
         width: 100%;
         height: 100%;
+    }
+
+    .hambeger{
+        display: none;
     }
 
     /* LOGO Particle */
@@ -367,6 +616,10 @@ table {
     #headerContent button img {
         width: 100%;
         height: 100%;
+    }
+
+    .hambeger{
+        display: none;
     }
 
     /* LOGO Particle */
