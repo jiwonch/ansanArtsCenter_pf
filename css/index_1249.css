@@ -314,6 +314,7 @@ table {
         width: 290px !important;
         height: 460px;
         margin: 0 10px;
+        cursor: -webkit-grab;
     }
 
     .poster_1 {

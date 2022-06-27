@@ -112,13 +112,14 @@ table {
     border-collapse: collapse;
 }
 
-@media screen and (min-width: 1250px) {
+
+@media screen and (max-width:767px) {
 
     /* Main start */
     /* headerSlider */
     #wrap1headerSlide {
         width: 100%;
-        height: 715px;
+        height: 450px;
         position: relative;
     }
 
@@ -139,7 +140,7 @@ table {
     }
 
     .slideImg {
-        width: 57%;
+        width: 100%;
         height: 100%;
         float: left;
     }
@@ -151,45 +152,56 @@ table {
 
     /* slide Text */
     .slideText {
+        background-color: white;
         position: absolute;
-        height: 100%;
-        width: 43%;
-        top: 23%;
-        right: 0%;
+        height: auto;
+        width: 90%;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        padding-top: 5%;
     }
 
     .boxSlideText {
-        width: 420px;
-        float: left;
-        margin-top: 50px;
-        height: 200px;
+        width:100%;
+        height: 80%;
+    }
+
+    .boxSlideText hr{
+        width: 90%;
+        margin: -10px auto 0;
     }
 
     .fa-calendar {
-        padding: 15px;
+        padding: 5%;
         color: #999;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .fa-comments {
         color: #999;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .boxSlideText a {
         font-size: 15px;
         color: #333;
         font-weight: bold;
-        margin-left: 40%;
+        margin-left: 30%;
         font-family: 'WooridaumL';
     }
 
     .s1TextBox h1 {
-        font-size: 100px;
+        font-size: 60px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/blue.jpg);
         background-size: cover;
         background-position: bottom right;
@@ -197,13 +209,13 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     .s2TextBox h1 {
-        font-size: 100px;
+        font-size: 60px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/green.jpg);
         background-size: cover;
         background-position: center;
@@ -211,13 +223,14 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
+
     }
 
     .s3TextBox h1 {
-        font-size: 100px;
+        font-size: 60px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/conceert_reverse.jpg);
         background-size: cover;
         background-position: top;
@@ -225,13 +238,13 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     .s4TextBox h1 {
-        font-size: 100px;
+        font-size: 60px;
+        height: auto;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         background-image: url(../img/index/swing.jpg);
         background-size: cover;
         background-position: 50%;
@@ -239,24 +252,23 @@ table {
         -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
         -webkit-background-clip: text;
         font-family: '국립박물관문화재단클래식B';
-        margin-left: -15%;
     }
 
     /* Performance Information */
     #wrap2PerformanceInformation {
         width: 100%;
-        height: 1145px;
+        height: 900px;
         padding: 150px 0 118px 0;
     }
 
     #informationTitle {
-        width: 1200px;
+        width: 100%;
         height: 165px;
         margin: 0 auto;
     }
 
     #informationTitle h1 {
-        font-size: 45px;
+        font-size: 32px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -269,7 +281,7 @@ table {
 
     #infomationPoster {
         width: 100%;
-        height: 712px;
+        height: 700px;
         position: relative;
         padding-right: 0;
     }
@@ -277,9 +289,9 @@ table {
     #infomationPoster::after {
         content: "";
         position: absolute;
-        top: 120px;
+        top: 70px;
         right: 15%;
-        bottom: -50px;
+        bottom: 30px;
         left: 0;
         background-color: #fdf5eb;
         z-index: -1;
@@ -287,7 +299,7 @@ table {
 
     #posterVisible {
         width: 81.6%;
-        height: 711px;
+        height: 700px;
         float: right;
         overflow: hidden;
     }
@@ -295,7 +307,7 @@ table {
     #posterHidden {
         position: relative;
         width: 100%;
-        height: 711px;
+        height: 700px;
     }
 
     .hiddenSwiper {
@@ -305,67 +317,87 @@ table {
     .poster {
         float: left;
         margin-left: 0;
-        width: 420px !important;
-        height: 680px;
+        width: 410px !important;
+        height: 600px !important;
         margin: 0 10px;
         cursor: -webkit-grab;
     }
 
     .poster_1 {
         background-image: url("../img/index/information_1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_2 {
         background-image: url("../img/index/information_2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_3 {
         background-image: url("../img/index/information_3.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_4 {
         background-image: url("../img/index/information_4.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_5 {
         background-image: url("../img/index/information_5.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_6 {
         background-image: url("../img/index/information_6.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_7 {
         background-image: url("../img/index/information_7.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_8 {
         background-image: url("../img/index/information_8.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_9 {
         background-image: url("../img/index/information_9.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .poster_10 {
         background-image: url("../img/index/information_10.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     /* Poster overlay */
     .posterOverlay {
-        width: 100%;
+        width: 90.5%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 0 0 140px 10px;
+        padding: 0 0 20px 5px;
     }
 
     .posterOverlay h3 {
         color: white;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 22px;
         font-family: 'EliceDigitalBaeum-Bd';
         margin-left: 15px;
     }
@@ -373,14 +405,14 @@ table {
     .pofa-color {
         color: white;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 7px;
     }
 
     .poster_text a {
         color: #f18b1e;
         font-weight: bold;
-        font-size: 15px;
-        padding-left: 25%;
+        font-size: 7px;
+        padding-left: 2%;
         font-family: 'WooridaumL';
     }
 
@@ -401,15 +433,15 @@ table {
     /* performance post */
     #wrap3PerformancePost {
         width: 100%;
-        height: 1195px;
-        padding: 120px 0;
+        height: 2100px;
+        padding: 80px 0;
         position: relative;
     }
 
     #postBox::after {
         content: "";
         position: absolute;
-        top: 420px;
+        top: 450px;
         right: 0;
         bottom: 40px;
         left: 25%;
@@ -418,7 +450,7 @@ table {
     }
 
     #performancePost {
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
         height: auto;
     }
@@ -429,7 +461,7 @@ table {
     }
 
     #postTitle h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -442,19 +474,21 @@ table {
 
     #postBox {
         width: 100%;
-        height: 740px;
+        height: 1000px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .posts {
-        width: 49%;
+        width: 85%;
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     .postBigBox {
@@ -516,22 +550,22 @@ table {
 
     .overlayPost h3 {
         color: #fff;
-        font-size: 27px;
+        font-size: 30px;
         padding-left: 15px;
         font-family: 'EliceDigitalBaeum-Bd';
         font-weight: bold;
     }
 
     .postText span {
-        font-size: 12px;
-        padding-left: 15px;
+        font-size: 15px;
+        padding-left: 14px;
     }
 
     .postText a {
         color: #f18b1e;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
-        padding-left: 1.7%;
+        padding-left: 1%;
         font-family: 'WooridaumB';
     }
 
@@ -541,15 +575,15 @@ table {
     }
 
     #morePost {
-        width: 1200px;
-        margin: 50px auto;
+        width: 100%;
+        margin: 680px auto;
     }
 
     .viewPost {
-        margin-left: 70%;
-        width: 300px;
+        margin-left: 50%;
+        width: 200px;
         border-bottom: 1px solid #f18b1e;
-        padding: 10px;
+        padding: 2%;
         text-align: right;
     }
 
@@ -564,21 +598,21 @@ table {
     /* Performance section Photo Start */
     #wrap4PerformancePhoto {
         width: 100%;
-        height: 110vw;
+        height: 300vw;
         padding: 120px 0;
         background-image: url('../img/index/middle_logo.png');
         background-repeat: no-repeat;
-        background-position: 90% 105%;
+        background-position: 90% 95%;
     }
 
     #photoTitle {
-        width: 1200px;
+        width: 100%;
         height: 240px;
         margin: 0 auto;
     }
 
     #photoTitle h1 {
-        font-size: 45px;
+        font-size: 26px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -590,7 +624,7 @@ table {
     }
 
     #photoTitle h3 {
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 20px;
         padding-top: 15px;
         font-family: 'GangwonEdu_OTFBoldA';
@@ -601,7 +635,7 @@ table {
     }
 
     #photoTitle h4 {
-        font-size: 18px;
+        font-size: 17px;
         padding-top: 5px;
         padding-left: 30px;
         font-family: 'GangwonEdu_OTFBoldA';
@@ -611,12 +645,13 @@ table {
         width: 100%;
         height: 66vw;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .photoBox {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 50%;
+        width: 50%;
     }
 
     .performancePhoto {
@@ -666,29 +701,29 @@ table {
     }
 
     .photo_1 {
-        padding-left: 0px !important;
+        /* padding-left: 0px !important; */
     }
 
     .photo_4 {
-        padding-right: 0px !important;
-        padding-top: 45%;
+        /* padding-right: 0px !important; */
+        padding-top: 2%;
     }
 
     /* 안산문화예술의전당 사업소개 */
     #wrap5ProjectIntroduction {
         width: 100%;
-        height: 840px;
+        height: 1200px;
         padding-bottom: 120px;
     }
 
     #projectTitle {
-        width: 1200px;
+        width: 100%;
         height: 180px;
         margin: 0 auto;
     }
 
     #projectTitle h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -700,8 +735,8 @@ table {
     }
 
     #projectCard {
-        width: 1200px;
-        height: 550px;
+        width: 95%;
+        height: 450px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -710,7 +745,7 @@ table {
     }
 
     .card {
-        width: 49%;
+        width: 100%;
         height: 31%;
         border: 2px solid #f18b1e;
         background-color: #fff;
@@ -744,23 +779,23 @@ table {
         width: 75%;
         height: 100%;
         background-color: #fdf5eb;
-        padding: 20px;
+        padding: 5px 10px;
         font-family: 'NanumBarunpen';
     }
 
     .cardText h3 {
         height: 28%;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .cardText h4 {
         height: 50%;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
     }
 
     .cardText p {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: bold;
     }
 

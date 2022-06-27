@@ -3,7 +3,7 @@ function detechMediaSize() {
         const swiper1 = new Swiper('.swiper-container', {
             //optional parameters
             direction: 'horizontal',
-            slidesPerView: 4.05,
+            slidesPerView: 3.5,
             slidesBetween: 5,
             debugger: true,
             loop: true,

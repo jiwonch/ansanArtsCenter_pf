@@ -113,7 +113,7 @@ table {
 }
 
 
-@media screen and (max-width:991px) {
+@media screen and (min-width:768px) and (max-width:991px) {
 
     /* Main start */
     /* headerSlider */
@@ -314,6 +314,7 @@ table {
         width: 220px !important;
         height: 380px !important;
         margin: 0 10px;
+        cursor: -webkit-grab;
     }
 
     .poster_1 {
