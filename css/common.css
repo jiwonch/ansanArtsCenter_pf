@@ -246,7 +246,7 @@ table {
         left: 50%;
         width: 100%;
         transform: translate(-50%, -50%);
-        font-size: 1.8em;
+        font-size: 1.6em;
         color: white;
         font-family: 'UhBeeSeulvely';
     }
@@ -339,7 +339,7 @@ table {
 
     .ft2Address p {
         font-weight: 500;
-        font-size: 13px;
+        font-size: 11px;
         padding-top: 10px;
         line-height: 25px;
         font-family: 'WooridaumL';

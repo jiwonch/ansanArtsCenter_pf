@@ -1,5 +1,23 @@
 function detechMediaSize() {
-    if (window.matchMedia('(max-width:991px)').matches) {
+
+    if (window.matchMedia('(max-width:767px').matches){
+        const swiper1 = new Swiper('.swiper-container', {
+            //optional parameters
+            direction: 'horizontal',
+            slidesPerView: 1,
+            slidesBetween: 0,
+            debugger: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 1500,
+            autoplay: {
+                // 5500
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+       
+    } else if (window.matchMedia('(min-width:768px) and (max-width:991px)').matches) {
         const swiper1 = new Swiper('.swiper-container', {
             //optional parameters
             direction: 'horizontal',

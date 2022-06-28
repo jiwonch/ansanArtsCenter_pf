@@ -190,10 +190,10 @@ table {
     }
 
     .boxSlideText a {
-        font-size: 15px;
+        font-size: 13px;
         color: #333;
         font-weight: bold;
-        margin-left: 30%;
+        margin-left: 20%;
         font-family: 'WooridaumL';
     }
 
@@ -258,17 +258,17 @@ table {
     #wrap2PerformanceInformation {
         width: 100%;
         height: 900px;
-        padding: 150px 0 118px 0;
+        padding: 100px 0 118px 0;
     }
 
     #informationTitle {
         width: 100%;
-        height: 165px;
+        height: 100px;
         margin: 0 auto;
     }
 
     #informationTitle h1 {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -281,7 +281,7 @@ table {
 
     #infomationPoster {
         width: 100%;
-        height: 700px;
+        height: 605px;
         position: relative;
         padding-right: 0;
     }
@@ -298,16 +298,15 @@ table {
     }
 
     #posterVisible {
-        width: 81.6%;
-        height: 700px;
-        float: right;
+        width: 100%;
+        height: 605px;
         overflow: hidden;
     }
 
     #posterHidden {
         position: relative;
         width: 100%;
-        height: 700px;
+        height: 605px;
     }
 
     .hiddenSwiper {
@@ -315,69 +314,87 @@ table {
     }
 
     .poster {
-        float: left;
-        margin-left: 0;
-        width: 410px !important;
+        /* width: 380px !important; */
         height: 600px !important;
-        margin: 0 10px;
+        width: 100% !important;
         cursor: -webkit-grab;
     }
 
     .poster_1 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_1.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_2 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_2.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_3 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_3.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_4 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_4.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_5 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_5.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_6 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_6.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_7 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_7.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_8 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_8.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_9 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_9.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .poster_10 {
+        width: 100%;
+        height: 100%;
         background-image: url("../img/index/information_10.jpg");
         background-size: contain;
         background-repeat: no-repeat;
@@ -385,8 +402,8 @@ table {
 
     /* Poster overlay */
     .posterOverlay {
-        width: 90.5%;
-        height: 100%;
+        width: 100%;
+        height: 92%;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
@@ -428,13 +445,14 @@ table {
         height: 60px;
         border-radius: 20%;
         color: #f18b1e;
+        display: none;
     }
 
     /* performance post */
     #wrap3PerformancePost {
         width: 100%;
-        height: 2100px;
-        padding: 80px 0;
+        height: 2250px;
+        padding: 10px 0;
         position: relative;
     }
 
@@ -457,11 +475,11 @@ table {
 
     #postTitle {
         width: 100%;
-        height: 165px;
+        height: 120px;
     }
 
     #postTitle h1 {
-        font-size: 35px;
+        font-size: 32px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -474,7 +492,7 @@ table {
 
     #postBox {
         width: 100%;
-        height: 1000px;
+        height: 2000px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -482,25 +500,24 @@ table {
 
     .posts {
         width: 85%;
-        height: 100%;
+        height: 1000px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 auto;
-        margin-bottom: 30px;
     }
 
     .postBigBox {
         width: 100%;
-        height: 44%;
+        height: 21%;
         overflow: hidden;
         position: relative;
     }
 
     .smallBox {
         width: 100%;
-        height: 52%;
+        height: 78%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -508,8 +525,8 @@ table {
     }
 
     .postSmallBox {
-        width: 47.5%;
-        height: 100%;
+        width: 100%;
+        height: 48%;
         overflow: hidden;
         position: relative;
     }
@@ -545,25 +562,25 @@ table {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
     .overlayPost h3 {
         color: #fff;
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 15px;
         font-family: 'EliceDigitalBaeum-Bd';
         font-weight: bold;
     }
 
     .postText span {
-        font-size: 15px;
+        font-size: 12px;
         padding-left: 14px;
     }
 
     .postText a {
         color: #f18b1e;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         padding-left: 1%;
         font-family: 'WooridaumB';
@@ -576,11 +593,11 @@ table {
 
     #morePost {
         width: 100%;
-        margin: 680px auto;
+        margin: 0px auto;
     }
 
     .viewPost {
-        margin-left: 50%;
+        margin-left: 30%;
         width: 200px;
         border-bottom: 1px solid #f18b1e;
         padding: 2%;
@@ -598,11 +615,11 @@ table {
     /* Performance section Photo Start */
     #wrap4PerformancePhoto {
         width: 100%;
-        height: 300vw;
-        padding: 120px 0;
+        height: 720vw;
+        padding: 60px 0;
         background-image: url('../img/index/middle_logo.png');
         background-repeat: no-repeat;
-        background-position: 90% 95%;
+        background-position: 60% -10%;
     }
 
     #photoTitle {
@@ -612,7 +629,7 @@ table {
     }
 
     #photoTitle h1 {
-        font-size: 26px;
+        font-size: 30px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -624,7 +641,7 @@ table {
     }
 
     #photoTitle h3 {
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 20px;
         padding-top: 15px;
         font-family: 'GangwonEdu_OTFBoldA';
@@ -635,7 +652,7 @@ table {
     }
 
     #photoTitle h4 {
-        font-size: 17px;
+        font-size: 15px;
         padding-top: 5px;
         padding-left: 30px;
         font-family: 'GangwonEdu_OTFBoldA';
@@ -650,7 +667,7 @@ table {
     }
 
     .photoBox {
-        flex: 0 0 50%;
+        flex: 0 0 100%;
         width: 50%;
     }
 
@@ -664,6 +681,7 @@ table {
         padding-left: 15px;
         padding-right: 15px;
         position: relative;
+        padding-bottom: 20px;
     }
 
     .photo1 {
@@ -678,21 +696,9 @@ table {
         justify-content: flex-end;
     }
 
-    .photo_2 {
-        padding: 7% 0 0 0;
-    }
-
-    .photoPadding {
-        padding-bottom: 15%;
-    }
-
     .photo3 {
         display: flex;
         flex-direction: column;
-    }
-
-    .photo_3 {
-        padding: 2% 0 5% 0;
     }
 
     .photo4 {
@@ -700,30 +706,22 @@ table {
         flex-direction: column;
     }
 
-    .photo_1 {
-        /* padding-left: 0px !important; */
-    }
-
-    .photo_4 {
-        /* padding-right: 0px !important; */
-        padding-top: 2%;
-    }
-
     /* 안산문화예술의전당 사업소개 */
     #wrap5ProjectIntroduction {
         width: 100%;
-        height: 1200px;
+        height: 1150px;
+        padding-top: 50px;
         padding-bottom: 120px;
     }
 
     #projectTitle {
         width: 100%;
-        height: 180px;
+        height: 100px;
         margin: 0 auto;
     }
 
     #projectTitle h1 {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: bolder;
         color: #333;
         font-family: '국립박물관문화재단클래식B';
@@ -746,20 +744,21 @@ table {
 
     .card {
         width: 100%;
-        height: 31%;
+        height: 28%;
         border: 2px solid #f18b1e;
         background-color: #fff;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        margin: 10px 0 10px 0;
     }
 
     .cardIcon {
-        width: 17%;
-        height: 60%;
+        width: 20%;
+        height: 52%;
         /* background-color: #fff; */
-        margin-left: 5%;
+        margin-left: 2.5%;
         border-radius: 50%;
         border: 3px double #fdf5eb;
         position: relative;
@@ -767,8 +766,8 @@ table {
     }
 
     .cardIcon img {
-        width: 70%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
         position: absolute;
         top: 50%;
         left: 50%;
