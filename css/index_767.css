@@ -169,11 +169,11 @@ table {
     }
 
     .boxSlideText {
-        width:100%;
+        width: 100%;
         height: 80%;
     }
 
-    .boxSlideText hr{
+    .boxSlideText hr {
         width: 90%;
         margin: -10px auto 0;
     }
@@ -298,15 +298,16 @@ table {
     }
 
     #posterVisible {
-        width: 100%;
-        height: 605px;
+        width: 320px;
+        height: 500px;
         overflow: hidden;
+        margin: 0 auto;
     }
 
     #posterHidden {
         position: relative;
         width: 100%;
-        height: 605px;
+        height: 500px;
     }
 
     .hiddenSwiper {
@@ -315,16 +316,17 @@ table {
 
     .poster {
         /* width: 380px !important; */
-        height: 600px !important;
-        width: 100% !important;
+        height: 500px !important;
+        width: 320px !important;
         cursor: -webkit-grab;
+        position: relative;
     }
 
     .poster_1 {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_1.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -332,7 +334,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_2.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -340,7 +342,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_3.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -348,7 +350,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_4.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -356,7 +358,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_5.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -364,7 +366,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_6.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -372,7 +374,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_7.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -380,7 +382,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_8.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -388,7 +390,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_9.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -396,19 +398,20 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("../img/index/information_10.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
     /* Poster overlay */
     .posterOverlay {
         width: 100%;
-        height: 92%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         padding: 0 0 20px 5px;
+        position: absolute;
     }
 
     .posterOverlay h3 {
@@ -499,8 +502,8 @@ table {
     }
 
     .posts {
-        width: 85%;
-        height: 1000px;
+        width: 74vw;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -733,7 +736,7 @@ table {
     }
 
     #projectCard {
-        width: 95%;
+        width: 80%;
         height: 450px;
         margin: 0 auto;
         display: flex;
