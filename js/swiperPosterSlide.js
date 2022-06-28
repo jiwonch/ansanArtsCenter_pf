@@ -6,7 +6,7 @@ function detechMediaSize() {
             direction: 'horizontal',
             slidesPerView: 1,
             slidesBetween: 0,
-            debugger: true,
+            debugger: false,
             loop: true,
             centeredSlides: true,
             resistance: false,
