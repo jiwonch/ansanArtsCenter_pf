@@ -4,7 +4,7 @@ function detechMediaSize() {
             //optional parameters
             direction: 'horizontal',
             slidesPerView: 3.5,
-            slidesBetween: 5,
+            slidesBetween: 3,
             debugger: true,
             loop: true,
             centeredSlides: true,
@@ -24,7 +24,7 @@ function detechMediaSize() {
             //optional parameters
             direction: 'horizontal',
             slidesPerView: 3.4,
-            slidesBetween: 5,
+            slidesBetween: 6,
             debugger: true,
             loop: true,
             centeredSlides: true,
