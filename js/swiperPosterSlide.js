@@ -9,6 +9,7 @@ function detechMediaSize() {
             debugger: true,
             loop: true,
             centeredSlides: true,
+            resistance: false,
             speed: 1500,
             autoplay: {
                 // 5500
