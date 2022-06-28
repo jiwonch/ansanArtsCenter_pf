@@ -399,14 +399,14 @@ table {
     .pofa-color {
         color: white;
         font-weight: bold;
-        font-size: 10.5px;
+        font-size: 10px;
     }
 
     .poster_text a {
         color: #f18b1e;
         font-weight: bold;
         font-size: 10px;
-        padding-left: 0.5%;
+        padding-left: 0.1%;
         font-family: 'WooridaumL';
     }
 
