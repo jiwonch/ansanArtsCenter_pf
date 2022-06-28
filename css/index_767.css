@@ -502,8 +502,8 @@ table {
     }
 
     .posts {
-        width: 74vw;
-        height: 120vh;
+        width: 85%;
+        height: 115vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
