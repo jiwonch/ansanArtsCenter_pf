@@ -10,10 +10,12 @@ function detechMediaSize() {
             loop: true,
             centeredSlides: true,
             resistance: false,
+            touchRatio: 0,
+            noSwiping:true,
             speed: 1500,
             autoplay: {
                 // 5500
-                delay: 3000,
+                delay: 2000,
                 disableOnInteraction: false,
             },
         });
