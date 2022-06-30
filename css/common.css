@@ -171,7 +171,7 @@ table {
         justify-content: center;
     }
 
-    #nHide ul li{
+    #nHide ul li {
         padding: 20px;
     }
 
@@ -182,7 +182,7 @@ table {
         font-family: 'WooridaumL';
     }
 
-    #nHide ul li a:hover{
+    #nHide ul li a:hover {
         color: #f18b1e;
     }
 
@@ -251,8 +251,12 @@ table {
         font-family: 'UhBeeSeulvely';
     }
 
-    #snow h2:hover {
-        color: #f18b1e;
+    #snow:hover h2 {
+        /* color: #f18b1e; */
+        background: linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     /* footer start */
@@ -283,7 +287,7 @@ table {
         margin-bottom: 80px;
     }
 
-    .ftTitle>li{
+    .ftTitle>li {
         width: 100%;
         text-align: center;
         line-height: 30px;
@@ -427,7 +431,7 @@ table {
         justify-content: center;
     }
 
-    #nHide ul li{
+    #nHide ul li {
         padding: 20px;
     }
 
@@ -438,7 +442,7 @@ table {
         font-family: 'WooridaumL';
     }
 
-    #nHide ul li a:hover{
+    #nHide ul li a:hover {
         color: #f18b1e;
     }
 
@@ -507,8 +511,12 @@ table {
         font-family: 'UhBeeSeulvely';
     }
 
-    #snow h2:hover {
-        color: #f18b1e;
+    #snow:hover h2 {
+        /* color: #f18b1e; */
+        background: linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     /* footer start */
@@ -679,7 +687,7 @@ table {
         height: 100%;
     }
 
-    .hambeger{
+    .hambeger {
         display: none;
     }
 
@@ -704,8 +712,12 @@ table {
         font-family: 'UhBeeSeulvely';
     }
 
-    #snow h2:hover {
-        color: #f18b1e;
+    #snow:hover h2 {
+        /* color: #f18b1e; */
+        background: linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     /* footer start */
@@ -875,7 +887,7 @@ table {
         height: 100%;
     }
 
-    .hambeger{
+    .hambeger {
         display: none;
     }
 
@@ -899,8 +911,12 @@ table {
         font-family: 'UhBeeSeulvely';
     }
 
-    #snow h2:hover {
-        color: #f18b1e;
+    #snow:hover h2 {
+        /* color: #f18b1e; */
+        background: linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     /* footer start */
