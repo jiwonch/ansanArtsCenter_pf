@@ -99,7 +99,7 @@
                     <h3>TRACK3</h3>
                     <h4>웃음과 감동의 힐링 추억여행</h4>
                     무언가 멈춰버린 것 같은 요즘, 단절된 관계에서 오는 스트레스가 일상이 되어버린
-                    현대인에게 선보일 푸근한 음악다방의 풍경은 따뜨산 웃음을 불러온다.
+                    현대인에게 선보일 푸근한 음악다방의 풍경은 따뜻한 웃음을 불러온다.
                     이를 통해 숨 가빴던 산업화 시대가 우리에게 남긴 유산들을 되새김질하며 이 시대를
                     살아가는 당신에게 감동과 위로를 선사한다.
                     </p>
@@ -155,18 +155,107 @@
                         </span>
                     </h1>
                 </div>
-                <div class="commentContent"></div>
-                <div class="commentContent"></div>
-                <div class="commentContent"></div>
-                <div class="commentContent"></div>
-                <div class="commentContent"></div>
+                <div class="commentContent a">
+                    <div class="commentImg">
+                        <div class="commentImgCard">
+                            <img src="img/postBlog/comment1.png" alt="comment">
+                        </div>
+                    </div>
+                    <div class="commentText">
+                        <h3>이름</h3>
+                        <i class="fa fa-heart">
+                            <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </i>
+                        <span class="fa fa-calendar">
+                            <span class="favicon">&nbsp;2022년 7월1일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </span>
+                        <p>dddsds</p>
+                        <button class="delete" onclick="commentDelete1();">삭제하기</button>
+                    </div>
+                </div>
+                <div class="commentContent b">
+                    <div class="commentText">
+                        <h3>이름</h3>
+                        <i class="fa fa-heart">
+                            <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </i>
+                        <span class="fa fa-calendar">
+                            <span class="favicon">&nbsp;2022년 7월1일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </span>
+                        <p>dddsds</p>
+                        <button class="delete" onclick="commentDelete2();">삭제하기</button>
+                    </div>
+                    <div class="commentImg">
+                        <div class="commentImgCard">
+                            <img src="img/postBlog/writerLogo.gif" alt="comment">
+                        </div>
+                    </div>
+                </div>
+                <div class="commentContent c">
+                    <div class="commentImg">
+                        <div class="commentImgCard">
+                            <img src="img/postBlog/comment2.png" alt="comment">
+                        </div>
+                    </div>
+                    <div class="commentText">
+                        <h3>이름</h3>
+                        <i class="fa fa-heart">
+                            <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </i>
+                        <span class="fa fa-calendar">
+                            <span class="favicon">&nbsp;2022년 7월1일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </span>
+                        <p>dddsds</p>
+                        <button class="delete" onclick="commentDelete3();">삭제하기</button>
+                    </div>
+                </div>
+                <div class="commentContent d">
+                    <div class="commentText">
+                        <h3>이름</h3>
+                        <i class="fa fa-heart">
+                            <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </i>
+                        <span class="fa fa-calendar">
+                            <span class="favicon">&nbsp;2022년 7월1일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </span>
+                        <p>dddsds</p>
+                        <button class="delete" onclick="commentDelete4();">삭제하기</button>
+                    </div>
+                    <div class="commentImg">
+                        <div class="commentImgCard">
+                            <img src="img/postBlog/writerLogo.gif" alt="comment">
+                        </div>
+                    </div>
+                </div>
+                <div class="commentContent bottomComment e">
+                    <div class="commentImg">
+                        <div class="commentImgCard">
+                            <img src="img/postBlog/comment3.png" alt="comment">
+                        </div>
+                    </div>
+                    <div class="commentText">
+                        <h3>이름</h3>
+                        <i class="fa fa-heart">
+                            <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </i>
+                        <span class="fa fa-calendar">
+                            <span class="favicon">&nbsp;2022년 7월1일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </span>
+                        <p>dddsds</p>
+                        <button class="delete" onclick="commentDelete5();">삭제하기</button>
+                    </div>
+                </div>
+
+                <!-- 댓글 삭제하기 클릭했을 때 confirm창 띄우기 yes누르면 비밀번호 누르는 창 띄우고 비밀번호가 맞으면 삭제 -->
+                <script src="js/commentDelete.js"></script>
 
                 <div id="commentPost">
                     <h1>COMMENT POST</h1>
                     <form>
                         <input type="text" placeholder="이름을 입력하세요"><br>
                         <input type="email" name="email" id="email" placeholder="이메일을 입력하세요"><br>
-                        <textarea name="commentMessage" id="commentMessage" cols="100" rows="10" placeholder="댓글 내용을 입력하세요."></textarea>
+                        <textarea name="commentMessage" id="commentMessage" cols="100" rows="10"
+                            placeholder="댓글 내용을 입력하세요."></textarea>
 
                     </form>
                 </div>
@@ -179,19 +268,92 @@
             </div>
             <div id="popularPost">
                 <h3>Popular post</h3>
-                <div id="popularImg"></div>
-                <div id="popularContent"></div>
+                <div id="popularImg">
+                    <a href="index.html"><img src="img/postBlog/danwon.jpg" alt="popular"></a>
+                </div>
+                <div id="popularContent">
+                    <a href="index.html"><h2>미디어 아트로 만나는 단원 김흥도를 관람하고...</h2></a>
+                    <span>
+                        <a href="index.html">#전시회</a>&nbsp;
+                        <a href="index.html">#김흥도</a>&nbsp;
+                        <a href="index.html">#1월전시</a>&nbsp;
+                    </span><br>
+                    <i class="fa fa-heart">
+                        <span class="favicon">140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </i>
+                    <span class="fa fa-calendar">
+                        <span class="favicon">&nbsp;2022년 1월 9일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </span>
+                    <span class="fa fa-comments">
+                        <span class="favicon">&nbsp;11</span>
+                    </span>
+                </div>
             </div>
             <div id="popularPosts">
                 <h3>posts</h3>
-                <div class="subPosts"></div>
-                <div class="subPosts"></div>
-                <div class="subPosts"></div>
+                <div class="subPosts">
+                    <a href="index.html"><h2>생텍쥐페리와 만나는 어린왕자</h2></a>
+                    <span>
+                        <a href="index.html">#뮤지컬</a>&nbsp;
+                        <a href="index.html">#어린왕자</a>&nbsp;
+                        <a href="index.html">#5월기획</a>&nbsp;
+                    </span><br>
+                    <i class="fa fa-heart">
+                        <span class="favicon">180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </i>
+                    <span class="fa fa-calendar">
+                        <span class="favicon">&nbsp;2022년 5월 5일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </span>
+                    <span class="fa fa-comments">
+                        <span class="favicon">&nbsp;20</span>
+                    </span>
+                </div>
+                <div class="subPosts">
+                    <a href="index.html"><h2>생텍쥐페리와 만나는 어린왕자</h2></a>
+                    <span>
+                        <a href="index.html">#뮤지컬</a>&nbsp;
+                        <a href="index.html">#어린왕자</a>&nbsp;
+                        <a href="index.html">#5월기획</a>&nbsp;
+                    </span><br>
+                    <i class="fa fa-heart">
+                        <span class="favicon">180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </i>
+                    <span class="fa fa-calendar">
+                        <span class="favicon">&nbsp;2022년 5월 5일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </span>
+                    <span class="fa fa-comments">
+                        <span class="favicon">&nbsp;20</span>
+                    </span>
+                </div>
+                <div class="subPosts">
+                    <a href="index.html"><h2>생텍쥐페리와 만나는 어린왕자</h2></a>
+                    <span>
+                        <a href="index.html">#뮤지컬</a>&nbsp;
+                        <a href="index.html">#어린왕자</a>&nbsp;
+                        <a href="index.html">#5월기획</a>&nbsp;
+                    </span><br>
+                    <i class="fa fa-heart">
+                        <span class="favicon">180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </i>
+                    <span class="fa fa-calendar">
+                        <span class="favicon">&nbsp;2022년 5월 5일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </span>
+                    <span class="fa fa-comments">
+                        <span class="favicon">&nbsp;20</span>
+                    </span>
+                </div>
             </div>
             <div id="newsLetter">
                 <h3>News Letter</h3>
                 <input type="email" name="subcribe" id="subcribeEmail" placeholder="email">
+                <div class="buttonBox">
+                    <button class="fun-btn">Subcribe</button>
+                </div>
             </div>
+
+            <!-- 구독 버튼 색상바뀜 밑 애니메이션 효과 -->
+            <script src="js/subcribeColorChange.js"></script>
+
             <div id="category">
                 <h3>Category</h3>
                 <div class="subCategory"></div>
@@ -202,6 +364,12 @@
             <div id="tag">
                 <h3>Tag</h3>
                 <div id="tagBox"></div>
+            </div>
+            <div id="map">
+                <h3>Map</h3>
+                <div id="mapBox">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12691.997379674227!2d126.8228601!3d37.3188432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x446cee67d1bdd845!2z7JWI7IKw66y47ZmU7JiI7Iig7J2Y7KCE64u5!5e0!3m2!1sko!2skr!4v1656657414453!5m2!1sko!2skr" width="100%" height="100%" border-radius="10px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>

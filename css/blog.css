@@ -94,7 +94,6 @@ body{
     width: 1200px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid yellowgreen;
     display: flex;
     margin-bottom: 150px;
 }
@@ -102,7 +101,6 @@ body{
 #postContent{
     width: 70%;
     height: 100%;
-    border: 1px solid red;
 }
 
 #content{
@@ -158,18 +156,25 @@ body{
     border: 1px solid #f18b1e;
     margin-top: 150px;
     display: flex;
-    background-color: rgba(255, 227, 184, 0.5);
     border-radius: 5px 40px 5px 40px;
 }
 
 #writerBox:hover{
     box-shadow: 2px 2px 10px 10px rgba(161, 161, 161, 0.1);
+    border: 3px solid transparent;
+    border-radius: 5px 40px 5px 40px;
+    background-image: linear-gradient(transparent),
+    linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 #writerImage{
     width: 25%;
     height: 100%;
     position: relative;
+    background-color: rgba(255, 227, 184, 0.5);
+    border-radius: 5px 0 0 40px;
 }
 
 .writeCardImage{
@@ -366,8 +371,47 @@ a.next:hover::after{
 
 .commentContent{
     width: 100%;
-    height: 200px;
+    height: 150px;
     border: 2px solid yellowgreen;
+    margin: 5px 0 5px 0;
+    display: flex;
+    background-color: rgba(212, 209, 209, 0.1);
+}
+
+.commentImg{
+    width: 20%;
+    height: 100%;
+    border: 1px solid red;
+    position: relative;
+    background-color: white;
+}
+
+.commentImgCard{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid #f18b1e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.commentImgCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.commentText{
+    width: 80%;
+    height: 100%;
+    border: 1px solid blue;
+    padding: 30px 10px 10px 30px
+}
+
+.bottomComment{
+    margin-bottom: 50px;
 }
 
 #commentPost{
@@ -379,7 +423,6 @@ a.next:hover::after{
 #postNavigation{
     width: 30%;
     height: auto;
-    border: 1px solid blue;
 }
 
 #postSearch{
@@ -415,14 +458,43 @@ a.next:hover::after{
     width: 90%;
     margin: 10px auto 0;
     height: 180px;
-    border: 1px solid red;
+    border: 2px solid rgba(255, 227, 184, 0.5);
+    border-radius: 10px;
+}
+
+#popularImg:hover{
+    box-shadow: 1px 1px 15px 10px rgba(138, 137, 137, 0.1);
+    border: 4px solid white;
+}
+
+#popularImg a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 #popularContent{
     width: 90%;
     margin: 5px auto 0;
     height: 80px;
-    border: 1px solid red;
+    padding: 0 5px 0 5px;
+}
+
+#popularContent h2{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#popularContent span a{
+    color: #f18b1e;
+    font-weight: bold;
+    font-family: 'EarlyFontDiary';
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+#popularContent .fa{
+    font-size: 13px;
 }
 
 #popularPosts{
@@ -439,7 +511,35 @@ a.next:hover::after{
     width: 90%;
     height: 28%;
     margin: 10px auto 0;
-    border: 1px solid lawngreen;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 227, 184, 0.5);
+}
+
+.subPosts:hover{
+    box-shadow: 1px 1px 15px 10px rgba(161, 161, 161, 0.1);
+    border: 3px solid rgba(255, 227, 184, 0.5);
+    background-color: white;
+}
+
+.subPosts a h2{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.subPosts span a{
+    color: #f18b1e;
+    font-weight: bold;
+    font-family: 'EarlyFontDiary';
+    letter-spacing: 2px;
+    font-size: 13px;
+    padding: 1px 0 0 10px;
+}
+
+.subPosts .fa{
+    font-size: 13px;
+    padding: 8px 0 0 13px;
 }
 
 #newsLetter{
@@ -450,6 +550,72 @@ a.next:hover::after{
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 10px;
+}
+
+.buttonBox{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.color-bg-start{
+    background-color: #f18b1e;
+}
+
+.bg-animate-color{
+    animation: random-bg .5s linear infinite;
+}
+
+@keyframes random-bg {
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.fun-btn{
+    background-color: #f18b1e;
+    color: white;
+    padding: 1em 3em;
+    border: none;
+    transition: all .3s ease;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+    align-self: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.fun-btn:hover{
+    animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
+}
+
+.start-fun{
+    background-color: #fff !important;
+    color: #f18b1e !important;
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(1);
+    }
+    14%{
+        transform: scale(1.3);
+    }
+    28%{
+        transform: scale(1);
+    }
+    42%{
+        transform: scale(1.3);
+    }
+    70%{
+        transform: scale(1);
+    }
 }
 
 #subcribeEmail{
@@ -484,6 +650,7 @@ a.next:hover::after{
     border: 2px solid lightgray;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 #tagBox{
@@ -491,4 +658,21 @@ a.next:hover::after{
     height: 85%;
     margin: 10px auto 0;
     border: 1px solid blueviolet;
+}
+
+#map{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#mapBox{
+    width: 90%;
+    height: 85%;
+    margin: 10px auto 0;
+    border: 2px solid rgba(255, 227, 184, 0.5);
+    border-radius: 10px;
 }
