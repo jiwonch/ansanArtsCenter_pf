@@ -254,9 +254,11 @@
                     <form>
                         <input type="text" placeholder="이름을 입력하세요"><br>
                         <input type="email" name="email" id="email" placeholder="이메일을 입력하세요"><br>
-                        <textarea name="commentMessage" id="commentMessage" cols="100" rows="10"
+                        <textarea name="commentMessage" id="commentMessage" 
                             placeholder="댓글 내용을 입력하세요."></textarea>
-
+                        <div class="commentButtonBox">
+                            <button class="commentSubject">post</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -345,7 +347,7 @@
             </div>
             <div id="newsLetter">
                 <h3>News Letter</h3>
-                <input type="email" name="subcribe" id="subcribeEmail" placeholder="email">
+                <input type="email" name="subcribe" id="subcribeEmail" placeholder="email을 입력하세요.">
                 <div class="buttonBox">
                     <button class="fun-btn">Subcribe</button>
                 </div>
@@ -356,14 +358,35 @@
 
             <div id="category">
                 <h3>Category</h3>
-                <div class="subCategory"></div>
-                <div class="subCategory"></div>
-                <div class="subCategory"></div>
-                <div class="subCategory"></div>
+                <div class="subCategory">
+                    <a href="index.html"><h3>공연 / 전시 소개</h3></a>
+                </div>
+                <div class="subCategory">
+                    <a href="index.html"><h3>공연 / 전시 공지</h3></a>
+                </div>
+                <div class="subCategory">
+                    <a href="index.html"><h3>공연 / 전시 후기</h3></a>
+                </div>
+                <div class="subCategory">
+                    <a href="index.html"><h3>Staff의 일상</h3></a>
+                </div>
             </div>
             <div id="tag">
                 <h3>Tag</h3>
-                <div id="tagBox"></div>
+                <div id="tagBox">
+                    <button class="buttonTag">연극</button>
+                    <button class="buttonTag">뮤지컬</button>
+                    <button class="buttonTag">마당극</button>
+                    <button class="buttonTag">클래식</button>
+                    <button class="buttonTag">오페라</button>
+                    <button class="buttonTag">음악극</button>
+                    <button class="buttonTag">콘서트</button>
+                    <button class="buttonTag">무용</button>
+                    <button class="buttonTag">발레</button>
+                    <button class="buttonTag">다원</button>
+                    <button class="buttonTag">아동극</button>
+                    <button class="buttonTag">기타</button>
+                </div>
             </div>
             <div id="map">
                 <h3>Map</h3>
