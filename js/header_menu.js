@@ -6,7 +6,7 @@ $(document).ready(function () {
         $("#nHide").toggleClass("navHide");
     });
 
-    $(".navHide ul li a").click(function(){
+    $(".navHide ul li a").click(function () {
         $(".hamberger").toggleClass("active");
         $("#nHide").toggleClass("navHide");
     });

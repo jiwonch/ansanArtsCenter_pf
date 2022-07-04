@@ -1,9 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $(".posterOverlay").stop().hide();
-    $(".poster").hover(function(){
+    $(".poster").hover(function () {
         $('.posterOverlay').stop().hide();
         $(this).find(".posterOverlay").stop().fadeIn();
-    }, function(){
+    }, function () {
         $(".posterOverlay").stop().hide();
     });
 });

@@ -16,18 +16,12 @@ function commentDelete(ele) {
 
 function commentDelete1() {
     commentDelete(document.getElementsByClassName("a")[0]);
-}
-
-function commentDelete2() {
-    commentDelete(document.getElementsByClassName("b")[0]);
+    $(".b").css("display", "none");
 }
 
 function commentDelete3() {
     commentDelete(document.getElementsByClassName("c")[0]);
-}
-
-function commentDelete4() {
-    commentDelete(document.getElementsByClassName("d")[0]);
+    $(".d").css("display", "none");
 }
 
 function commentDelete5() {

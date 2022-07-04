@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper',{
+const swiper = new Swiper('.swiper', {
     //optional parameters
     direction: 'horizontal',
     slidesPerView: 1,
@@ -14,8 +14,8 @@ const swiper = new Swiper('.swiper',{
     },
 
     // Pagination
-    pagination:{
+    pagination: {
         el: '.swiper-pagination',
-        clickable : true,
+        clickable: true,
     },
 });

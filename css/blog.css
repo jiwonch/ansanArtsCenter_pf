@@ -162,7 +162,6 @@ table {
         background-color: rgba(255, 255, 255, 0.9);
         margin: 0 auto;
         padding-bottom: 50px;
-        border: 2px solid lightgray;
         border-radius: 10px;
     }
 
@@ -216,8 +215,6 @@ table {
         box-shadow: 2px 2px 10px 10px rgba(161, 161, 161, 0.1);
         border: 3px solid transparent;
         border-radius: 5px 40px 5px 40px;
-        background-image: linear-gradient(transparent),
-            linear-gradient(to right, #c67d84, #7E81BE, #559FD3, #7AC142, #FEC325, #F68932, #F06477);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
@@ -396,8 +393,7 @@ table {
         width: 95%;
         height: auto;
         margin: 20px auto 0;
-        background-color: rgba(255, 255, 255, 0.9);
-        border: 2px solid lightgray;
+        background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
     }
 
@@ -430,7 +426,8 @@ table {
         height: 150px;
         margin: 5px 0 5px 0;
         display: flex;
-        background-color: rgba(212, 209, 209, 0.1);
+        background-color: rgba(255, 227, 184, 0.5);
+        border-radius: 5px 40px 5px 40px;
     }
 
     .commentImg {
@@ -438,6 +435,7 @@ table {
         height: 100%;
         position: relative;
         background-color: white;
+        border-radius: 5px 40px 5px 40px;
     }
 
     .commentImgCard {
@@ -449,6 +447,11 @@ table {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
+    }
+
+    .b,
+    .d {
+        margin-bottom: 50px;
     }
 
     .commentImgCard img {
@@ -940,7 +943,7 @@ table {
         font-size: 12px;
         letter-spacing: 2.5px;
         font-weight: 500;
-        counter-reset: #333;
+        color: #333;
         background-color: rgba(255, 227, 184, 0.5);
         border: none;
         border-radius: 3px;
@@ -982,5 +985,10 @@ table {
         margin: 10px auto 0;
         border: 2px solid rgba(255, 227, 184, 0.5);
         border-radius: 10px;
+    }
+
+    #mapBox iframe {
+        width: 100%;
+        height: 100%;
     }
 }
